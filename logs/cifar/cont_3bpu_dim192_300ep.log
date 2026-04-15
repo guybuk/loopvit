@@ -1,0 +1,395 @@
+/home/ec2-user/dev/ugh/.venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Model: continuous | Params: 1,519,498 | K=8 | blocks/unit=3
+----------------------------------------------------------------------
+Ep   1 | loss 1.7833 | task 1.7833 | cons 0.0000 | train 33.6% | test 43.5%
+Ep   2 | loss 1.4563 | task 1.4563 | cons 0.0000 | train 46.8% | test 51.3%
+Ep   3 | loss 1.3020 | task 1.3020 | cons 0.0000 | train 52.9% | test 55.6%
+Ep   4 | loss 1.2160 | task 1.2160 | cons 0.0000 | train 56.1% | test 55.8%
+Ep   5 | loss 1.1429 | task 1.1429 | cons 0.0000 | train 58.4% | test 59.7%
+Ep   6 | loss 1.0838 | task 1.0838 | cons 0.0000 | train 60.8% | test 61.0%
+Ep   7 | loss 1.0286 | task 1.0286 | cons 0.0000 | train 63.1% | test 65.2%
+Ep   8 | loss 0.9712 | task 0.9712 | cons 0.0000 | train 65.1% | test 66.2%
+Ep   9 | loss 0.9239 | task 0.9239 | cons 0.0000 | train 67.0% | test 66.6%
+Ep  10 | loss 0.8871 | task 0.8871 | cons 0.0000 | train 68.2% | test 69.1%
+    K=1: 63.4%
+    K=2: 68.1%
+    K=4: 69.3%
+Ep  11 | loss 0.8501 | task 0.8501 | cons 0.0000 | train 69.5% | test 71.0%
+Ep  12 | loss 0.8082 | task 0.8082 | cons 0.0000 | train 71.1% | test 70.6%
+Ep  13 | loss 0.7815 | task 0.7815 | cons 0.0000 | train 72.2% | test 72.4%
+Ep  14 | loss 0.7517 | task 0.7517 | cons 0.0000 | train 73.2% | test 73.6%
+Ep  15 | loss 0.7228 | task 0.7228 | cons 0.0000 | train 74.2% | test 73.7%
+Ep  16 | loss 0.7051 | task 0.7051 | cons 0.0000 | train 74.8% | test 74.7%
+Ep  17 | loss 0.6705 | task 0.6705 | cons 0.0000 | train 76.3% | test 74.9%
+Ep  18 | loss 0.6545 | task 0.6545 | cons 0.0000 | train 76.9% | test 74.8%
+Ep  19 | loss 0.6273 | task 0.6273 | cons 0.0000 | train 77.9% | test 76.0%
+Ep  20 | loss 0.6095 | task 0.6095 | cons 0.0000 | train 78.4% | test 77.0%
+    K=1: 73.4%
+    K=2: 77.2%
+    K=4: 77.4%
+Ep  21 | loss 0.5878 | task 0.5878 | cons 0.0000 | train 79.0% | test 76.8%
+Ep  22 | loss 0.5738 | task 0.5738 | cons 0.0000 | train 79.7% | test 77.0%
+Ep  23 | loss 0.5620 | task 0.5620 | cons 0.0000 | train 80.2% | test 76.6%
+Ep  24 | loss 0.5413 | task 0.5413 | cons 0.0000 | train 80.8% | test 77.4%
+Ep  25 | loss 0.5110 | task 0.5110 | cons 0.0000 | train 81.9% | test 76.8%
+Ep  26 | loss 0.5027 | task 0.5027 | cons 0.0000 | train 82.0% | test 77.8%
+Ep  27 | loss 0.4834 | task 0.4834 | cons 0.0000 | train 82.8% | test 78.8%
+Ep  28 | loss 0.4719 | task 0.4719 | cons 0.0000 | train 83.2% | test 78.7%
+Ep  29 | loss 0.4622 | task 0.4622 | cons 0.0000 | train 83.5% | test 78.3%
+Ep  30 | loss 0.4399 | task 0.4399 | cons 0.0000 | train 84.5% | test 78.7%
+    K=1: 75.1%
+    K=2: 78.6%
+    K=4: 79.0%
+Ep  31 | loss 0.4279 | task 0.4279 | cons 0.0000 | train 84.6% | test 78.8%
+Ep  32 | loss 0.4149 | task 0.4149 | cons 0.0000 | train 85.1% | test 78.6%
+Ep  33 | loss 0.3992 | task 0.3992 | cons 0.0000 | train 85.6% | test 78.5%
+Ep  34 | loss 0.3954 | task 0.3954 | cons 0.0000 | train 85.8% | test 79.0%
+Ep  35 | loss 0.3820 | task 0.3820 | cons 0.0000 | train 86.3% | test 79.4%
+Ep  36 | loss 0.3693 | task 0.3693 | cons 0.0000 | train 86.8% | test 79.4%
+Ep  37 | loss 0.3527 | task 0.3527 | cons 0.0000 | train 87.4% | test 79.3%
+Ep  38 | loss 0.3488 | task 0.3488 | cons 0.0000 | train 87.5% | test 78.7%
+Ep  39 | loss 0.3378 | task 0.3378 | cons 0.0000 | train 87.9% | test 79.2%
+Ep  40 | loss 0.3248 | task 0.3248 | cons 0.0000 | train 88.4% | test 79.5%
+    K=1: 74.5%
+    K=2: 79.0%
+    K=4: 79.8%
+Ep  41 | loss 0.3087 | task 0.3087 | cons 0.0000 | train 88.8% | test 79.4%
+Ep  42 | loss 0.3085 | task 0.3085 | cons 0.0000 | train 88.9% | test 79.0%
+Ep  43 | loss 0.3003 | task 0.3003 | cons 0.0000 | train 89.3% | test 79.1%
+Ep  44 | loss 0.2909 | task 0.2909 | cons 0.0000 | train 89.5% | test 80.1%
+Ep  45 | loss 0.2861 | task 0.2861 | cons 0.0000 | train 89.9% | test 79.5%
+Ep  46 | loss 0.2693 | task 0.2693 | cons 0.0000 | train 90.3% | test 79.3%
+Ep  47 | loss 0.2814 | task 0.2814 | cons 0.0000 | train 90.0% | test 79.7%
+Ep  48 | loss 0.2571 | task 0.2571 | cons 0.0000 | train 90.9% | test 79.6%
+Ep  49 | loss 0.2464 | task 0.2464 | cons 0.0000 | train 91.1% | test 79.8%
+Ep  50 | loss 0.2430 | task 0.2430 | cons 0.0000 | train 91.2% | test 79.6%
+    K=1: 76.3%
+    K=2: 79.0%
+    K=4: 79.8%
+Ep  51 | loss 0.2443 | task 0.2443 | cons 0.0000 | train 91.2% | test 78.8%
+Ep  52 | loss 0.2343 | task 0.2343 | cons 0.0000 | train 91.6% | test 79.1%
+Ep  53 | loss 0.2346 | task 0.2346 | cons 0.0000 | train 91.5% | test 78.9%
+Ep  54 | loss 0.2256 | task 0.2256 | cons 0.0000 | train 91.9% | test 79.4%
+Ep  55 | loss 0.2158 | task 0.2158 | cons 0.0000 | train 92.2% | test 79.2%
+Ep  56 | loss 0.2192 | task 0.2192 | cons 0.0000 | train 92.2% | test 79.5%
+Ep  57 | loss 0.2143 | task 0.2143 | cons 0.0000 | train 92.4% | test 79.7%
+Ep  58 | loss 0.1971 | task 0.1971 | cons 0.0000 | train 92.9% | test 80.0%
+Ep  59 | loss 0.1982 | task 0.1982 | cons 0.0000 | train 92.8% | test 80.1%
+Ep  60 | loss 0.1957 | task 0.1957 | cons 0.0000 | train 92.9% | test 79.9%
+    K=1: 76.9%
+    K=2: 79.5%
+    K=4: 80.2%
+Ep  61 | loss 0.1936 | task 0.1936 | cons 0.0000 | train 93.1% | test 79.5%
+Ep  62 | loss 0.1843 | task 0.1843 | cons 0.0000 | train 93.4% | test 80.2%
+Ep  63 | loss 0.1819 | task 0.1819 | cons 0.0000 | train 93.6% | test 79.9%
+Ep  64 | loss 0.1760 | task 0.1760 | cons 0.0000 | train 93.7% | test 79.4%
+Ep  65 | loss 0.1786 | task 0.1786 | cons 0.0000 | train 93.6% | test 79.3%
+Ep  66 | loss 0.1706 | task 0.1706 | cons 0.0000 | train 93.9% | test 80.1%
+Ep  67 | loss 0.1674 | task 0.1674 | cons 0.0000 | train 94.0% | test 80.6%
+Ep  68 | loss 0.1642 | task 0.1642 | cons 0.0000 | train 94.1% | test 79.9%
+Ep  69 | loss 0.1630 | task 0.1630 | cons 0.0000 | train 94.3% | test 78.9%
+Ep  70 | loss 0.1585 | task 0.1585 | cons 0.0000 | train 94.3% | test 79.6%
+    K=1: 77.0%
+    K=2: 80.4%
+    K=4: 80.3%
+Ep  71 | loss 0.1522 | task 0.1522 | cons 0.0000 | train 94.6% | test 80.4%
+Ep  72 | loss 0.1533 | task 0.1533 | cons 0.0000 | train 94.5% | test 79.4%
+Ep  73 | loss 0.1409 | task 0.1409 | cons 0.0000 | train 95.0% | test 79.7%
+Ep  74 | loss 0.1448 | task 0.1448 | cons 0.0000 | train 94.9% | test 80.7%
+Ep  75 | loss 0.1379 | task 0.1379 | cons 0.0000 | train 95.1% | test 80.2%
+Ep  76 | loss 0.1417 | task 0.1417 | cons 0.0000 | train 95.0% | test 80.6%
+Ep  77 | loss 0.1362 | task 0.1362 | cons 0.0000 | train 95.1% | test 80.2%
+Ep  78 | loss 0.1315 | task 0.1315 | cons 0.0000 | train 95.3% | test 80.3%
+Ep  79 | loss 0.1318 | task 0.1318 | cons 0.0000 | train 95.3% | test 79.3%
+Ep  80 | loss 0.1315 | task 0.1315 | cons 0.0000 | train 95.3% | test 80.4%
+    K=1: 77.9%
+    K=2: 80.6%
+    K=4: 80.7%
+Ep  81 | loss 0.1331 | task 0.1331 | cons 0.0000 | train 95.3% | test 80.2%
+Ep  82 | loss 0.1312 | task 0.1312 | cons 0.0000 | train 95.3% | test 80.2%
+Ep  83 | loss 0.1217 | task 0.1217 | cons 0.0000 | train 95.7% | test 80.2%
+Ep  84 | loss 0.1224 | task 0.1224 | cons 0.0000 | train 95.6% | test 80.1%
+Ep  85 | loss 0.1192 | task 0.1192 | cons 0.0000 | train 95.8% | test 80.0%
+Ep  86 | loss 0.1177 | task 0.1177 | cons 0.0000 | train 95.8% | test 79.5%
+Ep  87 | loss 0.1178 | task 0.1178 | cons 0.0000 | train 95.8% | test 80.6%
+Ep  88 | loss 0.1086 | task 0.1086 | cons 0.0000 | train 96.1% | test 79.9%
+Ep  89 | loss 0.1114 | task 0.1114 | cons 0.0000 | train 96.1% | test 79.7%
+Ep  90 | loss 0.1063 | task 0.1063 | cons 0.0000 | train 96.3% | test 80.5%
+    K=1: 77.5%
+    K=2: 80.4%
+    K=4: 80.6%
+Ep  91 | loss 0.1052 | task 0.1052 | cons 0.0000 | train 96.3% | test 80.9%
+Ep  92 | loss 0.1045 | task 0.1045 | cons 0.0000 | train 96.4% | test 80.1%
+Ep  93 | loss 0.1058 | task 0.1058 | cons 0.0000 | train 96.3% | test 80.3%
+Ep  94 | loss 0.1005 | task 0.1005 | cons 0.0000 | train 96.4% | test 80.2%
+Ep  95 | loss 0.0996 | task 0.0996 | cons 0.0000 | train 96.5% | test 79.6%
+Ep  96 | loss 0.0986 | task 0.0986 | cons 0.0000 | train 96.5% | test 80.3%
+Ep  97 | loss 0.0981 | task 0.0981 | cons 0.0000 | train 96.6% | test 80.2%
+Ep  98 | loss 0.0930 | task 0.0930 | cons 0.0000 | train 96.7% | test 80.6%
+Ep  99 | loss 0.0979 | task 0.0979 | cons 0.0000 | train 96.5% | test 81.0%
+Ep 100 | loss 0.0860 | task 0.0860 | cons 0.0000 | train 97.0% | test 80.0%
+    K=1: 77.8%
+    K=2: 80.3%
+    K=4: 80.5%
+Ep 101 | loss 0.0938 | task 0.0938 | cons 0.0000 | train 96.7% | test 80.1%
+Ep 102 | loss 0.0842 | task 0.0842 | cons 0.0000 | train 97.1% | test 79.6%
+Ep 103 | loss 0.0894 | task 0.0894 | cons 0.0000 | train 96.8% | test 80.4%
+Ep 104 | loss 0.0896 | task 0.0896 | cons 0.0000 | train 96.8% | test 80.3%
+Ep 105 | loss 0.0855 | task 0.0855 | cons 0.0000 | train 97.0% | test 80.1%
+Ep 106 | loss 0.0774 | task 0.0774 | cons 0.0000 | train 97.3% | test 80.1%
+Ep 107 | loss 0.0853 | task 0.0853 | cons 0.0000 | train 97.0% | test 80.6%
+Ep 108 | loss 0.0853 | task 0.0853 | cons 0.0000 | train 97.1% | test 80.1%
+Ep 109 | loss 0.0785 | task 0.0785 | cons 0.0000 | train 97.2% | test 80.4%
+Ep 110 | loss 0.0819 | task 0.0819 | cons 0.0000 | train 97.1% | test 80.9%
+    K=1: 77.1%
+    K=2: 80.6%
+    K=4: 81.2%
+Ep 111 | loss 0.0771 | task 0.0771 | cons 0.0000 | train 97.3% | test 80.3%
+Ep 112 | loss 0.0718 | task 0.0718 | cons 0.0000 | train 97.5% | test 80.3%
+Ep 113 | loss 0.0739 | task 0.0739 | cons 0.0000 | train 97.4% | test 80.2%
+Ep 114 | loss 0.0773 | task 0.0773 | cons 0.0000 | train 97.3% | test 80.5%
+Ep 115 | loss 0.0735 | task 0.0735 | cons 0.0000 | train 97.4% | test 81.1%
+Ep 116 | loss 0.0699 | task 0.0699 | cons 0.0000 | train 97.5% | test 79.8%
+Ep 117 | loss 0.0713 | task 0.0713 | cons 0.0000 | train 97.5% | test 81.0%
+Ep 118 | loss 0.0662 | task 0.0662 | cons 0.0000 | train 97.7% | test 80.8%
+Ep 119 | loss 0.0661 | task 0.0661 | cons 0.0000 | train 97.6% | test 80.4%
+Ep 120 | loss 0.0672 | task 0.0672 | cons 0.0000 | train 97.7% | test 79.8%
+    K=1: 77.9%
+    K=2: 80.3%
+    K=4: 80.2%
+Ep 121 | loss 0.0673 | task 0.0673 | cons 0.0000 | train 97.6% | test 80.5%
+Ep 122 | loss 0.0626 | task 0.0626 | cons 0.0000 | train 97.9% | test 80.9%
+Ep 123 | loss 0.0644 | task 0.0644 | cons 0.0000 | train 97.7% | test 80.5%
+Ep 124 | loss 0.0639 | task 0.0639 | cons 0.0000 | train 97.7% | test 80.6%
+Ep 125 | loss 0.0651 | task 0.0651 | cons 0.0000 | train 97.7% | test 81.1%
+Ep 126 | loss 0.0680 | task 0.0680 | cons 0.0000 | train 97.7% | test 81.1%
+Ep 127 | loss 0.0599 | task 0.0599 | cons 0.0000 | train 97.9% | test 80.5%
+Ep 128 | loss 0.0601 | task 0.0601 | cons 0.0000 | train 97.9% | test 80.9%
+Ep 129 | loss 0.0595 | task 0.0595 | cons 0.0000 | train 97.9% | test 80.9%
+Ep 130 | loss 0.0578 | task 0.0578 | cons 0.0000 | train 98.0% | test 80.8%
+    K=1: 78.0%
+    K=2: 81.1%
+    K=4: 81.0%
+Ep 131 | loss 0.0584 | task 0.0584 | cons 0.0000 | train 97.9% | test 80.6%
+Ep 132 | loss 0.0552 | task 0.0552 | cons 0.0000 | train 98.1% | test 81.2%
+Ep 133 | loss 0.0526 | task 0.0526 | cons 0.0000 | train 98.2% | test 81.1%
+Ep 134 | loss 0.0527 | task 0.0527 | cons 0.0000 | train 98.2% | test 80.7%
+Ep 135 | loss 0.0568 | task 0.0568 | cons 0.0000 | train 98.0% | test 80.2%
+Ep 136 | loss 0.0502 | task 0.0502 | cons 0.0000 | train 98.3% | test 81.2%
+Ep 137 | loss 0.0527 | task 0.0527 | cons 0.0000 | train 98.3% | test 81.3%
+Ep 138 | loss 0.0497 | task 0.0497 | cons 0.0000 | train 98.3% | test 81.0%
+Ep 139 | loss 0.0511 | task 0.0511 | cons 0.0000 | train 98.2% | test 80.9%
+Ep 140 | loss 0.0454 | task 0.0454 | cons 0.0000 | train 98.4% | test 81.2%
+    K=1: 77.8%
+    K=2: 80.6%
+    K=4: 81.4%
+Ep 141 | loss 0.0460 | task 0.0460 | cons 0.0000 | train 98.4% | test 81.0%
+Ep 142 | loss 0.0445 | task 0.0445 | cons 0.0000 | train 98.5% | test 81.7%
+Ep 143 | loss 0.0459 | task 0.0459 | cons 0.0000 | train 98.4% | test 80.7%
+Ep 144 | loss 0.0481 | task 0.0481 | cons 0.0000 | train 98.3% | test 81.5%
+Ep 145 | loss 0.0461 | task 0.0461 | cons 0.0000 | train 98.4% | test 80.7%
+Ep 146 | loss 0.0437 | task 0.0437 | cons 0.0000 | train 98.5% | test 80.7%
+Ep 147 | loss 0.0445 | task 0.0445 | cons 0.0000 | train 98.5% | test 81.1%
+Ep 148 | loss 0.0413 | task 0.0413 | cons 0.0000 | train 98.6% | test 81.2%
+Ep 149 | loss 0.0417 | task 0.0417 | cons 0.0000 | train 98.5% | test 81.4%
+Ep 150 | loss 0.0397 | task 0.0397 | cons 0.0000 | train 98.6% | test 80.8%
+    K=1: 77.8%
+    K=2: 80.8%
+    K=4: 81.1%
+Ep 151 | loss 0.0413 | task 0.0413 | cons 0.0000 | train 98.6% | test 81.1%
+Ep 152 | loss 0.0412 | task 0.0412 | cons 0.0000 | train 98.6% | test 80.5%
+Ep 153 | loss 0.0411 | task 0.0411 | cons 0.0000 | train 98.6% | test 80.2%
+Ep 154 | loss 0.0371 | task 0.0371 | cons 0.0000 | train 98.7% | test 81.3%
+Ep 155 | loss 0.0366 | task 0.0366 | cons 0.0000 | train 98.7% | test 80.5%
+Ep 156 | loss 0.0353 | task 0.0353 | cons 0.0000 | train 98.8% | test 80.8%
+Ep 157 | loss 0.0348 | task 0.0348 | cons 0.0000 | train 98.8% | test 81.2%
+Ep 158 | loss 0.0337 | task 0.0337 | cons 0.0000 | train 98.8% | test 80.7%
+Ep 159 | loss 0.0333 | task 0.0333 | cons 0.0000 | train 98.9% | test 81.2%
+Ep 160 | loss 0.0345 | task 0.0345 | cons 0.0000 | train 98.9% | test 80.6%
+    K=1: 78.6%
+    K=2: 81.0%
+    K=4: 81.2%
+Ep 161 | loss 0.0352 | task 0.0352 | cons 0.0000 | train 98.8% | test 81.0%
+Ep 162 | loss 0.0339 | task 0.0339 | cons 0.0000 | train 98.9% | test 81.6%
+Ep 163 | loss 0.0309 | task 0.0309 | cons 0.0000 | train 98.9% | test 80.9%
+Ep 164 | loss 0.0299 | task 0.0299 | cons 0.0000 | train 99.0% | test 80.8%
+Ep 165 | loss 0.0313 | task 0.0313 | cons 0.0000 | train 98.9% | test 81.1%
+Ep 166 | loss 0.0311 | task 0.0311 | cons 0.0000 | train 98.9% | test 80.4%
+Ep 167 | loss 0.0250 | task 0.0250 | cons 0.0000 | train 99.1% | test 80.8%
+Ep 168 | loss 0.0293 | task 0.0293 | cons 0.0000 | train 99.0% | test 81.1%
+Ep 169 | loss 0.0279 | task 0.0279 | cons 0.0000 | train 99.0% | test 81.0%
+Ep 170 | loss 0.0276 | task 0.0276 | cons 0.0000 | train 99.1% | test 81.3%
+    K=1: 79.0%
+    K=2: 81.7%
+    K=4: 81.8%
+Ep 171 | loss 0.0252 | task 0.0252 | cons 0.0000 | train 99.2% | test 80.8%
+Ep 172 | loss 0.0258 | task 0.0258 | cons 0.0000 | train 99.1% | test 81.7%
+Ep 173 | loss 0.0231 | task 0.0231 | cons 0.0000 | train 99.2% | test 81.2%
+Ep 174 | loss 0.0270 | task 0.0270 | cons 0.0000 | train 99.1% | test 80.8%
+Ep 175 | loss 0.0258 | task 0.0258 | cons 0.0000 | train 99.1% | test 80.9%
+Ep 176 | loss 0.0254 | task 0.0254 | cons 0.0000 | train 99.1% | test 81.0%
+Ep 177 | loss 0.0226 | task 0.0226 | cons 0.0000 | train 99.2% | test 81.2%
+Ep 178 | loss 0.0208 | task 0.0208 | cons 0.0000 | train 99.3% | test 81.5%
+Ep 179 | loss 0.0211 | task 0.0211 | cons 0.0000 | train 99.2% | test 81.1%
+Ep 180 | loss 0.0207 | task 0.0207 | cons 0.0000 | train 99.2% | test 81.3%
+    K=1: 79.7%
+    K=2: 81.7%
+    K=4: 81.8%
+Ep 181 | loss 0.0217 | task 0.0217 | cons 0.0000 | train 99.3% | test 80.4%
+Ep 182 | loss 0.0193 | task 0.0193 | cons 0.0000 | train 99.4% | test 80.7%
+Ep 183 | loss 0.0198 | task 0.0198 | cons 0.0000 | train 99.3% | test 81.3%
+Ep 184 | loss 0.0194 | task 0.0194 | cons 0.0000 | train 99.3% | test 81.1%
+Ep 185 | loss 0.0188 | task 0.0188 | cons 0.0000 | train 99.4% | test 81.5%
+Ep 186 | loss 0.0208 | task 0.0208 | cons 0.0000 | train 99.3% | test 80.2%
+Ep 187 | loss 0.0191 | task 0.0191 | cons 0.0000 | train 99.4% | test 80.8%
+Ep 188 | loss 0.0177 | task 0.0177 | cons 0.0000 | train 99.4% | test 81.6%
+Ep 189 | loss 0.0169 | task 0.0169 | cons 0.0000 | train 99.4% | test 81.2%
+Ep 190 | loss 0.0146 | task 0.0146 | cons 0.0000 | train 99.5% | test 81.5%
+    K=1: 79.2%
+    K=2: 81.6%
+    K=4: 81.9%
+Ep 191 | loss 0.0166 | task 0.0166 | cons 0.0000 | train 99.5% | test 81.6%
+Ep 192 | loss 0.0150 | task 0.0150 | cons 0.0000 | train 99.5% | test 81.5%
+Ep 193 | loss 0.0153 | task 0.0153 | cons 0.0000 | train 99.5% | test 81.4%
+Ep 194 | loss 0.0158 | task 0.0158 | cons 0.0000 | train 99.5% | test 81.6%
+Ep 195 | loss 0.0154 | task 0.0154 | cons 0.0000 | train 99.5% | test 81.2%
+Ep 196 | loss 0.0147 | task 0.0147 | cons 0.0000 | train 99.5% | test 82.0%
+Ep 197 | loss 0.0150 | task 0.0150 | cons 0.0000 | train 99.5% | test 81.2%
+Ep 198 | loss 0.0131 | task 0.0131 | cons 0.0000 | train 99.6% | test 81.3%
+Ep 199 | loss 0.0128 | task 0.0128 | cons 0.0000 | train 99.6% | test 81.0%
+Ep 200 | loss 0.0138 | task 0.0138 | cons 0.0000 | train 99.5% | test 80.8%
+    K=1: 79.7%
+    K=2: 81.6%
+    K=4: 81.4%
+Ep 201 | loss 0.0118 | task 0.0118 | cons 0.0000 | train 99.6% | test 81.5%
+Ep 202 | loss 0.0116 | task 0.0116 | cons 0.0000 | train 99.6% | test 81.6%
+Ep 203 | loss 0.0129 | task 0.0129 | cons 0.0000 | train 99.6% | test 81.6%
+Ep 204 | loss 0.0116 | task 0.0116 | cons 0.0000 | train 99.6% | test 81.8%
+Ep 205 | loss 0.0098 | task 0.0098 | cons 0.0000 | train 99.7% | test 81.2%
+Ep 206 | loss 0.0100 | task 0.0100 | cons 0.0000 | train 99.6% | test 81.9%
+Ep 207 | loss 0.0103 | task 0.0103 | cons 0.0000 | train 99.7% | test 81.4%
+Ep 208 | loss 0.0108 | task 0.0108 | cons 0.0000 | train 99.6% | test 81.4%
+Ep 209 | loss 0.0092 | task 0.0092 | cons 0.0000 | train 99.7% | test 81.8%
+Ep 210 | loss 0.0092 | task 0.0092 | cons 0.0000 | train 99.7% | test 81.6%
+    K=1: 79.1%
+    K=2: 81.7%
+    K=4: 81.9%
+Ep 211 | loss 0.0089 | task 0.0089 | cons 0.0000 | train 99.7% | test 81.8%
+Ep 212 | loss 0.0087 | task 0.0087 | cons 0.0000 | train 99.7% | test 81.4%
+Ep 213 | loss 0.0084 | task 0.0084 | cons 0.0000 | train 99.7% | test 82.0%
+Ep 214 | loss 0.0071 | task 0.0071 | cons 0.0000 | train 99.8% | test 82.0%
+Ep 215 | loss 0.0083 | task 0.0083 | cons 0.0000 | train 99.7% | test 81.9%
+Ep 216 | loss 0.0083 | task 0.0083 | cons 0.0000 | train 99.7% | test 81.9%
+Ep 217 | loss 0.0082 | task 0.0082 | cons 0.0000 | train 99.7% | test 81.7%
+Ep 218 | loss 0.0069 | task 0.0069 | cons 0.0000 | train 99.8% | test 82.1%
+Ep 219 | loss 0.0075 | task 0.0075 | cons 0.0000 | train 99.8% | test 81.7%
+Ep 220 | loss 0.0056 | task 0.0056 | cons 0.0000 | train 99.8% | test 82.1%
+    K=1: 79.8%
+    K=2: 82.1%
+    K=4: 82.3%
+Ep 221 | loss 0.0048 | task 0.0048 | cons 0.0000 | train 99.8% | test 81.8%
+Ep 222 | loss 0.0056 | task 0.0056 | cons 0.0000 | train 99.8% | test 81.9%
+Ep 223 | loss 0.0056 | task 0.0056 | cons 0.0000 | train 99.8% | test 81.7%
+Ep 224 | loss 0.0054 | task 0.0054 | cons 0.0000 | train 99.8% | test 81.8%
+Ep 225 | loss 0.0053 | task 0.0053 | cons 0.0000 | train 99.8% | test 82.0%
+Ep 226 | loss 0.0044 | task 0.0044 | cons 0.0000 | train 99.9% | test 81.3%
+Ep 227 | loss 0.0042 | task 0.0042 | cons 0.0000 | train 99.9% | test 81.5%
+Ep 228 | loss 0.0047 | task 0.0047 | cons 0.0000 | train 99.8% | test 81.7%
+Ep 229 | loss 0.0051 | task 0.0051 | cons 0.0000 | train 99.8% | test 81.7%
+Ep 230 | loss 0.0034 | task 0.0034 | cons 0.0000 | train 99.9% | test 81.7%
+    K=1: 79.3%
+    K=2: 81.8%
+    K=4: 81.9%
+Ep 231 | loss 0.0042 | task 0.0042 | cons 0.0000 | train 99.9% | test 81.6%
+Ep 232 | loss 0.0044 | task 0.0044 | cons 0.0000 | train 99.9% | test 81.7%
+Ep 233 | loss 0.0038 | task 0.0038 | cons 0.0000 | train 99.9% | test 82.1%
+Ep 234 | loss 0.0034 | task 0.0034 | cons 0.0000 | train 99.9% | test 82.1%
+Ep 235 | loss 0.0044 | task 0.0044 | cons 0.0000 | train 99.9% | test 82.0%
+Ep 236 | loss 0.0034 | task 0.0034 | cons 0.0000 | train 99.9% | test 82.2%
+Ep 237 | loss 0.0026 | task 0.0026 | cons 0.0000 | train 99.9% | test 81.7%
+Ep 238 | loss 0.0034 | task 0.0034 | cons 0.0000 | train 99.9% | test 81.9%
+Ep 239 | loss 0.0029 | task 0.0029 | cons 0.0000 | train 99.9% | test 82.0%
+Ep 240 | loss 0.0033 | task 0.0033 | cons 0.0000 | train 99.9% | test 82.0%
+    K=1: 79.8%
+    K=2: 82.2%
+    K=4: 82.4%
+Ep 241 | loss 0.0026 | task 0.0026 | cons 0.0000 | train 99.9% | test 81.8%
+Ep 242 | loss 0.0034 | task 0.0034 | cons 0.0000 | train 99.9% | test 81.6%
+Ep 243 | loss 0.0022 | task 0.0022 | cons 0.0000 | train 99.9% | test 81.8%
+Ep 244 | loss 0.0020 | task 0.0020 | cons 0.0000 | train 99.9% | test 82.0%
+Ep 245 | loss 0.0020 | task 0.0020 | cons 0.0000 | train 99.9% | test 82.2%
+Ep 246 | loss 0.0017 | task 0.0017 | cons 0.0000 | train 100.0% | test 82.2%
+Ep 247 | loss 0.0021 | task 0.0021 | cons 0.0000 | train 99.9% | test 82.4%
+Ep 248 | loss 0.0017 | task 0.0017 | cons 0.0000 | train 100.0% | test 82.3%
+Ep 249 | loss 0.0021 | task 0.0021 | cons 0.0000 | train 99.9% | test 82.3%
+Ep 250 | loss 0.0018 | task 0.0018 | cons 0.0000 | train 99.9% | test 82.2%
+    K=1: 80.5%
+    K=2: 82.4%
+    K=4: 82.7%
+Ep 251 | loss 0.0014 | task 0.0014 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 252 | loss 0.0018 | task 0.0018 | cons 0.0000 | train 99.9% | test 82.2%
+Ep 253 | loss 0.0015 | task 0.0015 | cons 0.0000 | train 100.0% | test 81.9%
+Ep 254 | loss 0.0015 | task 0.0015 | cons 0.0000 | train 99.9% | test 82.1%
+Ep 255 | loss 0.0017 | task 0.0017 | cons 0.0000 | train 100.0% | test 81.9%
+Ep 256 | loss 0.0018 | task 0.0018 | cons 0.0000 | train 100.0% | test 81.9%
+Ep 257 | loss 0.0015 | task 0.0015 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 258 | loss 0.0010 | task 0.0010 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 259 | loss 0.0011 | task 0.0011 | cons 0.0000 | train 100.0% | test 81.9%
+Ep 260 | loss 0.0013 | task 0.0013 | cons 0.0000 | train 100.0% | test 81.7%
+    K=1: 80.2%
+    K=2: 81.8%
+    K=4: 82.2%
+Ep 261 | loss 0.0009 | task 0.0009 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 262 | loss 0.0010 | task 0.0010 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 263 | loss 0.0007 | task 0.0007 | cons 0.0000 | train 100.0% | test 81.8%
+Ep 264 | loss 0.0009 | task 0.0009 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 265 | loss 0.0012 | task 0.0012 | cons 0.0000 | train 100.0% | test 81.9%
+Ep 266 | loss 0.0008 | task 0.0008 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 267 | loss 0.0007 | task 0.0007 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 268 | loss 0.0007 | task 0.0007 | cons 0.0000 | train 100.0% | test 81.9%
+Ep 269 | loss 0.0008 | task 0.0008 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 270 | loss 0.0008 | task 0.0008 | cons 0.0000 | train 100.0% | test 82.1%
+    K=1: 80.3%
+    K=2: 82.3%
+    K=4: 82.4%
+Ep 271 | loss 0.0006 | task 0.0006 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 272 | loss 0.0010 | task 0.0010 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 273 | loss 0.0007 | task 0.0007 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 274 | loss 0.0007 | task 0.0007 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 275 | loss 0.0005 | task 0.0005 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 276 | loss 0.0004 | task 0.0004 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 277 | loss 0.0005 | task 0.0005 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 278 | loss 0.0006 | task 0.0006 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 279 | loss 0.0005 | task 0.0005 | cons 0.0000 | train 100.0% | test 82.2%
+Ep 280 | loss 0.0003 | task 0.0003 | cons 0.0000 | train 100.0% | test 82.2%
+    K=1: 80.4%
+    K=2: 82.4%
+    K=4: 82.4%
+Ep 281 | loss 0.0005 | task 0.0005 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 282 | loss 0.0006 | task 0.0006 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 283 | loss 0.0003 | task 0.0003 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 284 | loss 0.0004 | task 0.0004 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 285 | loss 0.0004 | task 0.0004 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 286 | loss 0.0005 | task 0.0005 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 287 | loss 0.0005 | task 0.0005 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 288 | loss 0.0003 | task 0.0003 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 289 | loss 0.0003 | task 0.0003 | cons 0.0000 | train 100.0% | test 82.1%
+Ep 290 | loss 0.0003 | task 0.0003 | cons 0.0000 | train 100.0% | test 82.0%
+    K=1: 80.6%
+    K=2: 82.5%
+    K=4: 82.3%
+Ep 291 | loss 0.0005 | task 0.0005 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 292 | loss 0.0004 | task 0.0004 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 293 | loss 0.0005 | task 0.0005 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 294 | loss 0.0003 | task 0.0003 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 295 | loss 0.0005 | task 0.0005 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 296 | loss 0.0004 | task 0.0004 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 297 | loss 0.0004 | task 0.0004 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 298 | loss 0.0004 | task 0.0004 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 299 | loss 0.0003 | task 0.0003 | cons 0.0000 | train 100.0% | test 82.0%
+Ep 300 | loss 0.0003 | task 0.0003 | cons 0.0000 | train 100.0% | test 82.0%
+    K=1: 80.6%
+    K=2: 82.5%
+    K=4: 82.4%
+Saved checkpoint to cont_3bpu_dim192_300ep.pt

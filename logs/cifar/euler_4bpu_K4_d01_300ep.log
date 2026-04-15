@@ -1,0 +1,1295 @@
+/home/ec2-user/dev/ugh/.venv/lib/python3.13/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Model: continuous | Params: 2,017,866 | K=4 | blocks/unit=4
+----------------------------------------------------------------------
+  step 100/391 | loss 1.9942 | acc 25.1% | 3s elapsed | eta 10s
+  step 200/391 | loss 1.9056 | acc 28.5% | 6s elapsed | eta 6s
+  step 300/391 | loss 1.8519 | acc 30.6% | 8s elapsed | eta 3s
+Ep   1 | loss 1.8071 | task 1.8071 | cons 0.0000 | train 32.5% | test 39.2% | 12s
+  step 100/391 | loss 1.5630 | acc 42.4% | 3s elapsed | eta 8s
+  step 200/391 | loss 1.5438 | acc 43.5% | 5s elapsed | eta 5s
+  step 300/391 | loss 1.5194 | acc 44.5% | 8s elapsed | eta 2s
+Ep   2 | loss 1.4977 | task 1.4977 | cons 0.0000 | train 45.2% | test 48.5% | 11s
+  step 100/391 | loss 1.3687 | acc 50.4% | 3s elapsed | eta 8s
+  step 200/391 | loss 1.3478 | acc 51.3% | 5s elapsed | eta 5s
+  step 300/391 | loss 1.3347 | acc 51.6% | 8s elapsed | eta 2s
+Ep   3 | loss 1.3249 | task 1.3249 | cons 0.0000 | train 52.0% | test 55.0% | 11s
+  step 100/391 | loss 1.2550 | acc 54.7% | 3s elapsed | eta 8s
+  step 200/391 | loss 1.2475 | acc 55.1% | 6s elapsed | eta 5s
+  step 300/391 | loss 1.2424 | acc 55.1% | 8s elapsed | eta 2s
+Ep   4 | loss 1.2358 | task 1.2358 | cons 0.0000 | train 55.3% | test 57.9% | 12s
+  step 100/391 | loss 1.1919 | acc 56.5% | 2s elapsed | eta 6s
+  step 200/391 | loss 1.1897 | acc 56.9% | 4s elapsed | eta 4s
+  step 300/391 | loss 1.1757 | acc 57.3% | 7s elapsed | eta 2s
+Ep   5 | loss 1.1656 | task 1.1656 | cons 0.0000 | train 57.8% | test 61.1% | 10s
+  step 100/391 | loss 1.1121 | acc 59.9% | 3s elapsed | eta 8s
+  step 200/391 | loss 1.1131 | acc 59.8% | 5s elapsed | eta 5s
+  step 300/391 | loss 1.1043 | acc 60.1% | 7s elapsed | eta 2s
+Ep   6 | loss 1.1030 | task 1.1030 | cons 0.0000 | train 60.1% | test 61.9% | 11s
+  step 100/391 | loss 1.0462 | acc 62.5% | 3s elapsed | eta 8s
+  step 200/391 | loss 1.0512 | acc 62.6% | 5s elapsed | eta 5s
+  step 300/391 | loss 1.0485 | acc 62.7% | 8s elapsed | eta 2s
+Ep   7 | loss 1.0457 | task 1.0457 | cons 0.0000 | train 62.8% | test 65.5% | 11s
+  step 100/391 | loss 1.0140 | acc 63.9% | 3s elapsed | eta 8s
+  step 200/391 | loss 1.0076 | acc 63.9% | 5s elapsed | eta 5s
+  step 300/391 | loss 1.0024 | acc 64.1% | 8s elapsed | eta 2s
+Ep   8 | loss 1.0020 | task 1.0020 | cons 0.0000 | train 64.1% | test 66.5% | 11s
+  step 100/391 | loss 0.9667 | acc 65.3% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.9695 | acc 65.1% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.9530 | acc 65.9% | 8s elapsed | eta 2s
+Ep   9 | loss 0.9483 | task 0.9483 | cons 0.0000 | train 65.9% | test 69.0% | 11s
+  step 100/391 | loss 0.9102 | acc 67.0% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.9128 | acc 67.3% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.9153 | acc 67.2% | 8s elapsed | eta 2s
+Ep  10 | loss 0.9130 | task 0.9130 | cons 0.0000 | train 67.2% | test 69.3% | 11s
+    K=1: 68.0%
+    K=2: 69.8%
+    K=4: 69.3%
+  step 100/391 | loss 0.8874 | acc 68.3% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.8752 | acc 68.9% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.8753 | acc 68.9% | 8s elapsed | eta 2s
+Ep  11 | loss 0.8739 | task 0.8739 | cons 0.0000 | train 68.9% | test 71.0% | 11s
+  step 100/391 | loss 0.8488 | acc 69.9% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.8479 | acc 69.8% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.8468 | acc 70.0% | 8s elapsed | eta 2s
+Ep  12 | loss 0.8450 | task 0.8450 | cons 0.0000 | train 70.0% | test 72.1% | 11s
+  step 100/391 | loss 0.8163 | acc 71.0% | 3s elapsed | eta 7s
+  step 200/391 | loss 0.8179 | acc 70.8% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.8127 | acc 71.1% | 8s elapsed | eta 2s
+Ep  13 | loss 0.8107 | task 0.8107 | cons 0.0000 | train 71.2% | test 71.9% | 11s
+  step 100/391 | loss 0.7871 | acc 71.9% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.7882 | acc 71.9% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.7833 | acc 72.1% | 8s elapsed | eta 2s
+Ep  14 | loss 0.7820 | task 0.7820 | cons 0.0000 | train 72.2% | test 73.2% | 12s
+  step 100/391 | loss 0.7431 | acc 73.1% | 3s elapsed | eta 7s
+  step 200/391 | loss 0.7513 | acc 73.1% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.7503 | acc 73.2% | 8s elapsed | eta 2s
+Ep  15 | loss 0.7504 | task 0.7504 | cons 0.0000 | train 73.2% | test 73.7% | 11s
+  step 100/391 | loss 0.7424 | acc 73.7% | 3s elapsed | eta 7s
+  step 200/391 | loss 0.7394 | acc 73.7% | 5s elapsed | eta 4s
+  step 300/391 | loss 0.7376 | acc 73.7% | 7s elapsed | eta 2s
+Ep  16 | loss 0.7356 | task 0.7356 | cons 0.0000 | train 73.8% | test 74.2% | 11s
+  step 100/391 | loss 0.7171 | acc 74.3% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.7104 | acc 74.7% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.7072 | acc 74.8% | 8s elapsed | eta 2s
+Ep  17 | loss 0.7099 | task 0.7099 | cons 0.0000 | train 74.7% | test 75.1% | 11s
+  step 100/391 | loss 0.6920 | acc 75.7% | 3s elapsed | eta 7s
+  step 200/391 | loss 0.6873 | acc 75.7% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.6952 | acc 75.3% | 7s elapsed | eta 2s
+Ep  18 | loss 0.6889 | task 0.6889 | cons 0.0000 | train 75.6% | test 75.1% | 11s
+  step 100/391 | loss 0.6691 | acc 76.2% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.6708 | acc 76.3% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.6652 | acc 76.5% | 8s elapsed | eta 2s
+Ep  19 | loss 0.6680 | task 0.6680 | cons 0.0000 | train 76.4% | test 76.5% | 11s
+  step 100/391 | loss 0.6520 | acc 76.8% | 2s elapsed | eta 7s
+  step 200/391 | loss 0.6568 | acc 76.5% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.6540 | acc 76.7% | 8s elapsed | eta 2s
+Ep  20 | loss 0.6559 | task 0.6559 | cons 0.0000 | train 76.7% | test 76.6% | 11s
+    K=1: 75.2%
+    K=2: 77.0%
+    K=4: 76.6%
+  step 100/391 | loss 0.6391 | acc 77.3% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.6343 | acc 77.6% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.6351 | acc 77.6% | 8s elapsed | eta 2s
+Ep  21 | loss 0.6332 | task 0.6332 | cons 0.0000 | train 77.7% | test 76.9% | 11s
+  step 100/391 | loss 0.5991 | acc 78.7% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.6088 | acc 78.4% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.6065 | acc 78.5% | 8s elapsed | eta 2s
+Ep  22 | loss 0.6142 | task 0.6142 | cons 0.0000 | train 78.2% | test 77.9% | 11s
+  step 100/391 | loss 0.5979 | acc 79.4% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.6040 | acc 78.9% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.6054 | acc 78.7% | 8s elapsed | eta 2s
+Ep  23 | loss 0.6102 | task 0.6102 | cons 0.0000 | train 78.5% | test 77.7% | 11s
+  step 100/391 | loss 0.5746 | acc 79.6% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.5834 | acc 79.3% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.5845 | acc 79.3% | 8s elapsed | eta 2s
+Ep  24 | loss 0.5905 | task 0.5905 | cons 0.0000 | train 79.0% | test 77.9% | 11s
+  step 100/391 | loss 0.5577 | acc 80.4% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.5654 | acc 79.9% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.5676 | acc 79.9% | 8s elapsed | eta 2s
+Ep  25 | loss 0.5684 | task 0.5684 | cons 0.0000 | train 80.0% | test 78.7% | 12s
+  step 100/391 | loss 0.5599 | acc 80.3% | 2s elapsed | eta 7s
+  step 200/391 | loss 0.5652 | acc 79.8% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.5606 | acc 80.0% | 8s elapsed | eta 2s
+Ep  26 | loss 0.5601 | task 0.5601 | cons 0.0000 | train 80.0% | test 78.4% | 11s
+  step 100/391 | loss 0.5430 | acc 80.7% | 2s elapsed | eta 7s
+  step 200/391 | loss 0.5471 | acc 80.5% | 4s elapsed | eta 4s
+  step 300/391 | loss 0.5445 | acc 80.7% | 7s elapsed | eta 2s
+Ep  27 | loss 0.5447 | task 0.5447 | cons 0.0000 | train 80.7% | test 78.6% | 11s
+  step 100/391 | loss 0.5130 | acc 81.8% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.5247 | acc 81.3% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.5261 | acc 81.2% | 8s elapsed | eta 2s
+Ep  28 | loss 0.5302 | task 0.5302 | cons 0.0000 | train 81.0% | test 79.3% | 11s
+  step 100/391 | loss 0.5100 | acc 81.8% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.5165 | acc 81.5% | 6s elapsed | eta 5s
+  step 300/391 | loss 0.5185 | acc 81.4% | 8s elapsed | eta 2s
+Ep  29 | loss 0.5153 | task 0.5153 | cons 0.0000 | train 81.5% | test 78.6% | 12s
+  step 100/391 | loss 0.4782 | acc 83.0% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.4887 | acc 82.7% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.4977 | acc 82.4% | 8s elapsed | eta 2s
+Ep  30 | loss 0.5056 | task 0.5056 | cons 0.0000 | train 82.1% | test 79.2% | 11s
+    K=1: 77.3%
+    K=2: 79.4%
+    K=4: 79.2%
+  step 100/391 | loss 0.4707 | acc 83.1% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.4820 | acc 82.6% | 6s elapsed | eta 5s
+  step 300/391 | loss 0.4888 | acc 82.3% | 8s elapsed | eta 2s
+Ep  31 | loss 0.4913 | task 0.4913 | cons 0.0000 | train 82.4% | test 80.0% | 12s
+  step 100/391 | loss 0.4656 | acc 83.6% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.4704 | acc 83.3% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.4820 | acc 82.9% | 7s elapsed | eta 2s
+Ep  32 | loss 0.4900 | task 0.4900 | cons 0.0000 | train 82.6% | test 80.0% | 11s
+  step 100/391 | loss 0.4650 | acc 83.3% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.4638 | acc 83.5% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.4724 | acc 83.2% | 8s elapsed | eta 2s
+Ep  33 | loss 0.4747 | task 0.4747 | cons 0.0000 | train 83.2% | test 79.8% | 11s
+  step 100/391 | loss 0.4596 | acc 83.2% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.4618 | acc 83.2% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.4632 | acc 83.3% | 8s elapsed | eta 2s
+Ep  34 | loss 0.4651 | task 0.4651 | cons 0.0000 | train 83.2% | test 80.4% | 11s
+  step 100/391 | loss 0.4485 | acc 83.9% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.4489 | acc 83.9% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.4532 | acc 83.8% | 8s elapsed | eta 2s
+Ep  35 | loss 0.4555 | task 0.4555 | cons 0.0000 | train 83.6% | test 80.7% | 11s
+  step 100/391 | loss 0.4183 | acc 84.7% | 3s elapsed | eta 7s
+  step 200/391 | loss 0.4305 | acc 84.4% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.4393 | acc 84.0% | 8s elapsed | eta 2s
+Ep  36 | loss 0.4442 | task 0.4442 | cons 0.0000 | train 83.9% | test 80.3% | 11s
+  step 100/391 | loss 0.4044 | acc 85.8% | 3s elapsed | eta 7s
+  step 200/391 | loss 0.4143 | acc 85.3% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.4237 | acc 84.9% | 8s elapsed | eta 2s
+Ep  37 | loss 0.4331 | task 0.4331 | cons 0.0000 | train 84.6% | test 80.4% | 11s
+  step 100/391 | loss 0.4240 | acc 84.8% | 3s elapsed | eta 7s
+  step 200/391 | loss 0.4210 | acc 84.9% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.4209 | acc 85.0% | 7s elapsed | eta 2s
+Ep  38 | loss 0.4222 | task 0.4222 | cons 0.0000 | train 84.9% | test 79.9% | 11s
+  step 100/391 | loss 0.4092 | acc 85.2% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.4179 | acc 85.0% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.4212 | acc 85.0% | 8s elapsed | eta 2s
+Ep  39 | loss 0.4207 | task 0.4207 | cons 0.0000 | train 85.1% | test 81.5% | 11s
+  step 100/391 | loss 0.3914 | acc 86.0% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.3995 | acc 85.7% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3998 | acc 85.6% | 8s elapsed | eta 2s
+Ep  40 | loss 0.4009 | task 0.4009 | cons 0.0000 | train 85.6% | test 81.1% | 11s
+    K=1: 79.3%
+    K=2: 80.9%
+    K=4: 81.1%
+  step 100/391 | loss 0.3800 | acc 86.6% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.3782 | acc 86.6% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3890 | acc 86.2% | 8s elapsed | eta 2s
+Ep  41 | loss 0.3915 | task 0.3915 | cons 0.0000 | train 86.1% | test 80.9% | 11s
+  step 100/391 | loss 0.3601 | acc 87.3% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.3746 | acc 86.8% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3786 | acc 86.6% | 8s elapsed | eta 2s
+Ep  42 | loss 0.3815 | task 0.3815 | cons 0.0000 | train 86.5% | test 81.2% | 11s
+  step 100/391 | loss 0.3551 | acc 87.2% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.3709 | acc 86.7% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3756 | acc 86.4% | 8s elapsed | eta 2s
+Ep  43 | loss 0.3804 | task 0.3804 | cons 0.0000 | train 86.3% | test 81.2% | 11s
+  step 100/391 | loss 0.3613 | acc 87.0% | 3s elapsed | eta 7s
+  step 200/391 | loss 0.3650 | acc 86.8% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3700 | acc 86.7% | 8s elapsed | eta 2s
+Ep  44 | loss 0.3700 | task 0.3700 | cons 0.0000 | train 86.6% | test 81.6% | 12s
+  step 100/391 | loss 0.3522 | acc 87.2% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.3569 | acc 87.2% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3605 | acc 86.9% | 8s elapsed | eta 2s
+Ep  45 | loss 0.3643 | task 0.3643 | cons 0.0000 | train 86.8% | test 81.0% | 11s
+  step 100/391 | loss 0.3446 | acc 87.6% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.3476 | acc 87.5% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3536 | acc 87.3% | 8s elapsed | eta 2s
+Ep  46 | loss 0.3590 | task 0.3590 | cons 0.0000 | train 87.1% | test 81.4% | 11s
+  step 100/391 | loss 0.3247 | acc 88.2% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.3328 | acc 88.1% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3448 | acc 87.6% | 8s elapsed | eta 2s
+Ep  47 | loss 0.3482 | task 0.3482 | cons 0.0000 | train 87.4% | test 80.5% | 11s
+  step 100/391 | loss 0.3432 | acc 87.7% | 2s elapsed | eta 7s
+  step 200/391 | loss 0.3397 | acc 87.9% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3468 | acc 87.7% | 8s elapsed | eta 2s
+Ep  48 | loss 0.3471 | task 0.3471 | cons 0.0000 | train 87.7% | test 81.3% | 11s
+  step 100/391 | loss 0.3209 | acc 88.2% | 2s elapsed | eta 7s
+  step 200/391 | loss 0.3225 | acc 88.4% | 5s elapsed | eta 4s
+  step 300/391 | loss 0.3250 | acc 88.3% | 7s elapsed | eta 2s
+Ep  49 | loss 0.3315 | task 0.3315 | cons 0.0000 | train 88.1% | test 81.2% | 11s
+  step 100/391 | loss 0.3305 | acc 88.2% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.3310 | acc 88.2% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3369 | acc 87.9% | 8s elapsed | eta 2s
+Ep  50 | loss 0.3353 | task 0.3353 | cons 0.0000 | train 88.0% | test 82.1% | 11s
+    K=1: 79.9%
+    K=2: 82.2%
+    K=4: 82.1%
+  step 100/391 | loss 0.3122 | acc 89.2% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.3040 | acc 89.4% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3103 | acc 89.1% | 8s elapsed | eta 2s
+Ep  51 | loss 0.3143 | task 0.3143 | cons 0.0000 | train 88.9% | test 81.6% | 12s
+  step 100/391 | loss 0.2934 | acc 89.5% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.3066 | acc 89.1% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.3092 | acc 89.0% | 8s elapsed | eta 2s
+Ep  52 | loss 0.3162 | task 0.3162 | cons 0.0000 | train 88.7% | test 81.0% | 11s
+  step 100/391 | loss 0.2906 | acc 89.5% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.2931 | acc 89.4% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.2954 | acc 89.4% | 8s elapsed | eta 2s
+Ep  53 | loss 0.3024 | task 0.3024 | cons 0.0000 | train 89.1% | test 81.0% | 11s
+  step 100/391 | loss 0.2836 | acc 89.6% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.2985 | acc 89.2% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.2979 | acc 89.2% | 8s elapsed | eta 2s
+Ep  54 | loss 0.3039 | task 0.3039 | cons 0.0000 | train 89.0% | test 81.2% | 11s
+  step 100/391 | loss 0.2860 | acc 89.6% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.2829 | acc 89.8% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.2860 | acc 89.7% | 8s elapsed | eta 2s
+Ep  55 | loss 0.2908 | task 0.2908 | cons 0.0000 | train 89.5% | test 81.9% | 12s
+  step 100/391 | loss 0.2643 | acc 90.5% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.2847 | acc 89.7% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.2896 | acc 89.7% | 8s elapsed | eta 2s
+Ep  56 | loss 0.2944 | task 0.2944 | cons 0.0000 | train 89.5% | test 81.0% | 11s
+  step 100/391 | loss 0.2693 | acc 90.5% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.2814 | acc 90.1% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.2865 | acc 89.9% | 8s elapsed | eta 2s
+Ep  57 | loss 0.2868 | task 0.2868 | cons 0.0000 | train 89.8% | test 81.0% | 11s
+  step 100/391 | loss 0.2760 | acc 89.9% | 2s elapsed | eta 7s
+  step 200/391 | loss 0.2910 | acc 89.4% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.2878 | acc 89.7% | 7s elapsed | eta 2s
+Ep  58 | loss 0.2862 | task 0.2862 | cons 0.0000 | train 89.7% | test 81.8% | 11s
+  step 100/391 | loss 0.2553 | acc 90.8% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.2627 | acc 90.6% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.2663 | acc 90.4% | 8s elapsed | eta 2s
+Ep  59 | loss 0.2703 | task 0.2703 | cons 0.0000 | train 90.3% | test 81.0% | 12s
+  step 100/391 | loss 0.2563 | acc 90.9% | 3s elapsed | eta 7s
+  step 200/391 | loss 0.2598 | acc 90.7% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.2673 | acc 90.4% | 7s elapsed | eta 2s
+Ep  60 | loss 0.2700 | task 0.2700 | cons 0.0000 | train 90.3% | test 81.5% | 9s
+    K=1: 79.3%
+    K=2: 81.4%
+    K=4: 81.5%
+  step 100/391 | loss 0.2560 | acc 91.0% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2641 | acc 90.6% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2604 | acc 90.7% | 9s elapsed | eta 3s
+Ep  61 | loss 0.2662 | task 0.2662 | cons 0.0000 | train 90.5% | test 81.4% | 13s
+  step 100/391 | loss 0.2362 | acc 91.3% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.2457 | acc 91.1% | 6s elapsed | eta 5s
+  step 300/391 | loss 0.2493 | acc 91.0% | 9s elapsed | eta 3s
+Ep  62 | loss 0.2543 | task 0.2543 | cons 0.0000 | train 90.8% | test 81.0% | 13s
+  step 100/391 | loss 0.2309 | acc 91.5% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2488 | acc 90.9% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2562 | acc 90.7% | 9s elapsed | eta 3s
+Ep  63 | loss 0.2576 | task 0.2576 | cons 0.0000 | train 90.7% | test 81.6% | 13s
+  step 100/391 | loss 0.2415 | acc 91.3% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2414 | acc 91.4% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2490 | acc 91.1% | 9s elapsed | eta 3s
+Ep  64 | loss 0.2542 | task 0.2542 | cons 0.0000 | train 90.9% | test 81.2% | 13s
+  step 100/391 | loss 0.2314 | acc 91.8% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2339 | acc 91.6% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2434 | acc 91.2% | 9s elapsed | eta 3s
+Ep  65 | loss 0.2466 | task 0.2466 | cons 0.0000 | train 91.2% | test 81.2% | 14s
+  step 100/391 | loss 0.2219 | acc 92.1% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.2331 | acc 91.6% | 6s elapsed | eta 5s
+  step 300/391 | loss 0.2339 | acc 91.6% | 9s elapsed | eta 3s
+Ep  66 | loss 0.2362 | task 0.2362 | cons 0.0000 | train 91.6% | test 81.4% | 13s
+  step 100/391 | loss 0.2151 | acc 92.3% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2228 | acc 92.1% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2280 | acc 91.8% | 9s elapsed | eta 3s
+Ep  67 | loss 0.2337 | task 0.2337 | cons 0.0000 | train 91.6% | test 81.8% | 13s
+  step 100/391 | loss 0.2347 | acc 91.4% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2336 | acc 91.5% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2376 | acc 91.4% | 9s elapsed | eta 3s
+Ep  68 | loss 0.2389 | task 0.2389 | cons 0.0000 | train 91.4% | test 81.7% | 13s
+  step 100/391 | loss 0.2157 | acc 92.2% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2230 | acc 92.0% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2305 | acc 91.7% | 9s elapsed | eta 3s
+Ep  69 | loss 0.2335 | task 0.2335 | cons 0.0000 | train 91.6% | test 82.2% | 14s
+  step 100/391 | loss 0.2298 | acc 91.6% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2286 | acc 91.8% | 6s elapsed | eta 5s
+  step 300/391 | loss 0.2315 | acc 91.8% | 9s elapsed | eta 3s
+Ep  70 | loss 0.2283 | task 0.2283 | cons 0.0000 | train 91.8% | test 81.9% | 13s
+    K=1: 80.2%
+    K=2: 82.1%
+    K=4: 81.9%
+  step 100/391 | loss 0.2136 | acc 92.3% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2166 | acc 92.2% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2207 | acc 92.1% | 9s elapsed | eta 3s
+Ep  71 | loss 0.2206 | task 0.2206 | cons 0.0000 | train 92.1% | test 81.0% | 13s
+  step 100/391 | loss 0.2056 | acc 92.7% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2147 | acc 92.2% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2224 | acc 92.1% | 9s elapsed | eta 3s
+Ep  72 | loss 0.2235 | task 0.2235 | cons 0.0000 | train 92.0% | test 81.4% | 13s
+  step 100/391 | loss 0.2036 | acc 92.6% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2077 | acc 92.6% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2125 | acc 92.5% | 9s elapsed | eta 3s
+Ep  73 | loss 0.2140 | task 0.2140 | cons 0.0000 | train 92.4% | test 82.0% | 13s
+  step 100/391 | loss 0.2067 | acc 92.5% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.2105 | acc 92.5% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.2102 | acc 92.6% | 8s elapsed | eta 2s
+Ep  74 | loss 0.2139 | task 0.2139 | cons 0.0000 | train 92.4% | test 81.6% | 12s
+  step 100/391 | loss 0.1973 | acc 93.0% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.2008 | acc 92.9% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2084 | acc 92.5% | 9s elapsed | eta 3s
+Ep  75 | loss 0.2082 | task 0.2082 | cons 0.0000 | train 92.5% | test 82.2% | 13s
+  step 100/391 | loss 0.2024 | acc 92.6% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.2024 | acc 92.6% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.2060 | acc 92.6% | 9s elapsed | eta 3s
+Ep  76 | loss 0.2071 | task 0.2071 | cons 0.0000 | train 92.5% | test 81.8% | 13s
+  step 100/391 | loss 0.1977 | acc 92.8% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1935 | acc 93.0% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1907 | acc 93.2% | 9s elapsed | eta 3s
+Ep  77 | loss 0.1954 | task 0.1954 | cons 0.0000 | train 93.0% | test 82.2% | 13s
+  step 100/391 | loss 0.1866 | acc 93.2% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1889 | acc 93.2% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1903 | acc 93.2% | 9s elapsed | eta 3s
+Ep  78 | loss 0.1906 | task 0.1906 | cons 0.0000 | train 93.2% | test 81.8% | 14s
+  step 100/391 | loss 0.1925 | acc 93.2% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1873 | acc 93.3% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1868 | acc 93.3% | 9s elapsed | eta 3s
+Ep  79 | loss 0.1901 | task 0.1901 | cons 0.0000 | train 93.2% | test 82.2% | 13s
+  step 100/391 | loss 0.1807 | acc 93.5% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1841 | acc 93.4% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1870 | acc 93.3% | 9s elapsed | eta 3s
+Ep  80 | loss 0.1873 | task 0.1873 | cons 0.0000 | train 93.2% | test 82.0% | 13s
+    K=1: 80.4%
+    K=2: 82.2%
+    K=4: 82.0%
+  step 100/391 | loss 0.1770 | acc 93.5% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.1837 | acc 93.3% | 6s elapsed | eta 5s
+  step 300/391 | loss 0.1830 | acc 93.3% | 9s elapsed | eta 3s
+Ep  81 | loss 0.1860 | task 0.1860 | cons 0.0000 | train 93.2% | test 81.5% | 13s
+  step 100/391 | loss 0.1778 | acc 93.7% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1787 | acc 93.4% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1792 | acc 93.4% | 9s elapsed | eta 3s
+Ep  82 | loss 0.1864 | task 0.1864 | cons 0.0000 | train 93.2% | test 82.0% | 13s
+  step 100/391 | loss 0.1942 | acc 92.9% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1833 | acc 93.4% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1876 | acc 93.3% | 9s elapsed | eta 3s
+Ep  83 | loss 0.1866 | task 0.1866 | cons 0.0000 | train 93.3% | test 81.9% | 13s
+  step 100/391 | loss 0.1727 | acc 93.8% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1735 | acc 93.8% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1782 | acc 93.6% | 9s elapsed | eta 3s
+Ep  84 | loss 0.1800 | task 0.1800 | cons 0.0000 | train 93.5% | test 81.8% | 14s
+  step 100/391 | loss 0.1809 | acc 93.7% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.1831 | acc 93.6% | 6s elapsed | eta 5s
+  step 300/391 | loss 0.1818 | acc 93.6% | 9s elapsed | eta 3s
+Ep  85 | loss 0.1814 | task 0.1814 | cons 0.0000 | train 93.6% | test 81.7% | 13s
+  step 100/391 | loss 0.1650 | acc 94.1% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1668 | acc 94.0% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1668 | acc 93.9% | 9s elapsed | eta 3s
+Ep  86 | loss 0.1686 | task 0.1686 | cons 0.0000 | train 93.9% | test 82.3% | 13s
+  step 100/391 | loss 0.1598 | acc 94.3% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1672 | acc 93.9% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1641 | acc 94.0% | 10s elapsed | eta 3s
+Ep  87 | loss 0.1684 | task 0.1684 | cons 0.0000 | train 93.9% | test 82.3% | 13s
+  step 100/391 | loss 0.1501 | acc 94.6% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.1616 | acc 94.2% | 6s elapsed | eta 5s
+  step 300/391 | loss 0.1656 | acc 94.0% | 9s elapsed | eta 3s
+Ep  88 | loss 0.1684 | task 0.1684 | cons 0.0000 | train 93.9% | test 82.2% | 13s
+  step 100/391 | loss 0.1649 | acc 94.1% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1718 | acc 93.8% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1713 | acc 93.9% | 9s elapsed | eta 3s
+Ep  89 | loss 0.1723 | task 0.1723 | cons 0.0000 | train 93.8% | test 82.0% | 13s
+  step 100/391 | loss 0.1610 | acc 94.3% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1683 | acc 93.9% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1682 | acc 93.9% | 9s elapsed | eta 3s
+Ep  90 | loss 0.1707 | task 0.1707 | cons 0.0000 | train 93.8% | test 82.2% | 13s
+    K=1: 81.0%
+    K=2: 82.5%
+    K=4: 82.2%
+  step 100/391 | loss 0.1598 | acc 94.3% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1615 | acc 94.2% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1676 | acc 94.1% | 9s elapsed | eta 3s
+Ep  91 | loss 0.1692 | task 0.1692 | cons 0.0000 | train 94.0% | test 82.0% | 13s
+  step 100/391 | loss 0.1548 | acc 94.4% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1521 | acc 94.4% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1543 | acc 94.4% | 9s elapsed | eta 3s
+Ep  92 | loss 0.1567 | task 0.1567 | cons 0.0000 | train 94.4% | test 82.0% | 14s
+  step 100/391 | loss 0.1456 | acc 94.7% | 3s elapsed | eta 10s
+  step 200/391 | loss 0.1472 | acc 94.6% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1531 | acc 94.4% | 9s elapsed | eta 3s
+Ep  93 | loss 0.1569 | task 0.1569 | cons 0.0000 | train 94.3% | test 81.9% | 13s
+  step 100/391 | loss 0.1367 | acc 95.1% | 3s elapsed | eta 10s
+  step 200/391 | loss 0.1378 | acc 95.1% | 7s elapsed | eta 6s
+  step 300/391 | loss 0.1463 | acc 94.8% | 9s elapsed | eta 3s
+Ep  94 | loss 0.1491 | task 0.1491 | cons 0.0000 | train 94.7% | test 81.9% | 13s
+  step 100/391 | loss 0.1573 | acc 94.5% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1573 | acc 94.5% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1521 | acc 94.7% | 9s elapsed | eta 3s
+Ep  95 | loss 0.1527 | task 0.1527 | cons 0.0000 | train 94.6% | test 82.0% | 14s
+  step 100/391 | loss 0.1497 | acc 94.7% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.1541 | acc 94.6% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1572 | acc 94.5% | 9s elapsed | eta 3s
+Ep  96 | loss 0.1592 | task 0.1592 | cons 0.0000 | train 94.4% | test 82.4% | 13s
+  step 100/391 | loss 0.1468 | acc 94.8% | 3s elapsed | eta 10s
+  step 200/391 | loss 0.1488 | acc 94.8% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1481 | acc 94.8% | 9s elapsed | eta 3s
+Ep  97 | loss 0.1531 | task 0.1531 | cons 0.0000 | train 94.6% | test 82.2% | 13s
+  step 100/391 | loss 0.1491 | acc 94.5% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1450 | acc 94.8% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1464 | acc 94.7% | 10s elapsed | eta 3s
+Ep  98 | loss 0.1469 | task 0.1469 | cons 0.0000 | train 94.8% | test 81.3% | 13s
+  step 100/391 | loss 0.1393 | acc 95.1% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1502 | acc 94.8% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1465 | acc 94.8% | 9s elapsed | eta 3s
+Ep  99 | loss 0.1472 | task 0.1472 | cons 0.0000 | train 94.7% | test 81.7% | 14s
+  step 100/391 | loss 0.1287 | acc 95.5% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1332 | acc 95.3% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1370 | acc 95.1% | 9s elapsed | eta 3s
+Ep 100 | loss 0.1394 | task 0.1394 | cons 0.0000 | train 95.0% | test 81.9% | 13s
+    K=1: 81.0%
+    K=2: 82.5%
+    K=4: 81.9%
+  step 100/391 | loss 0.1426 | acc 95.0% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1428 | acc 94.9% | 5s elapsed | eta 5s
+  step 300/391 | loss 0.1533 | acc 94.6% | 8s elapsed | eta 2s
+Ep 101 | loss 0.1549 | task 0.1549 | cons 0.0000 | train 94.5% | test 82.1% | 12s
+  step 100/391 | loss 0.1397 | acc 95.0% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1362 | acc 95.1% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1398 | acc 95.0% | 9s elapsed | eta 3s
+Ep 102 | loss 0.1421 | task 0.1421 | cons 0.0000 | train 94.9% | test 82.2% | 13s
+  step 100/391 | loss 0.1323 | acc 95.3% | 3s elapsed | eta 8s
+  step 200/391 | loss 0.1360 | acc 95.1% | 6s elapsed | eta 5s
+  step 300/391 | loss 0.1368 | acc 95.1% | 9s elapsed | eta 3s
+Ep 103 | loss 0.1381 | task 0.1381 | cons 0.0000 | train 95.0% | test 81.4% | 13s
+  step 100/391 | loss 0.1325 | acc 95.4% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1356 | acc 95.3% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1359 | acc 95.2% | 9s elapsed | eta 3s
+Ep 104 | loss 0.1376 | task 0.1376 | cons 0.0000 | train 95.1% | test 82.2% | 13s
+  step 100/391 | loss 0.1319 | acc 95.6% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1407 | acc 95.0% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1392 | acc 95.1% | 9s elapsed | eta 3s
+Ep 105 | loss 0.1403 | task 0.1403 | cons 0.0000 | train 95.0% | test 82.4% | 13s
+  step 100/391 | loss 0.1247 | acc 95.5% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1278 | acc 95.5% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1284 | acc 95.4% | 9s elapsed | eta 3s
+Ep 106 | loss 0.1356 | task 0.1356 | cons 0.0000 | train 95.2% | test 81.4% | 14s
+  step 100/391 | loss 0.1192 | acc 95.7% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1235 | acc 95.6% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1266 | acc 95.5% | 9s elapsed | eta 3s
+Ep 107 | loss 0.1302 | task 0.1302 | cons 0.0000 | train 95.3% | test 82.0% | 13s
+  step 100/391 | loss 0.1170 | acc 95.9% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1240 | acc 95.6% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1293 | acc 95.4% | 9s elapsed | eta 3s
+Ep 108 | loss 0.1353 | task 0.1353 | cons 0.0000 | train 95.2% | test 82.1% | 13s
+  step 100/391 | loss 0.1296 | acc 95.4% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1273 | acc 95.6% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1244 | acc 95.6% | 9s elapsed | eta 3s
+Ep 109 | loss 0.1300 | task 0.1300 | cons 0.0000 | train 95.5% | test 81.5% | 13s
+  step 100/391 | loss 0.1240 | acc 95.6% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1310 | acc 95.4% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1271 | acc 95.5% | 9s elapsed | eta 3s
+Ep 110 | loss 0.1299 | task 0.1299 | cons 0.0000 | train 95.4% | test 82.0% | 13s
+    K=1: 81.6%
+    K=2: 82.5%
+    K=4: 82.0%
+  step 100/391 | loss 0.1090 | acc 96.1% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1181 | acc 95.7% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1203 | acc 95.7% | 9s elapsed | eta 3s
+Ep 111 | loss 0.1216 | task 0.1216 | cons 0.0000 | train 95.6% | test 82.0% | 13s
+  step 100/391 | loss 0.1102 | acc 96.1% | 3s elapsed | eta 10s
+  step 200/391 | loss 0.1172 | acc 95.8% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1173 | acc 95.8% | 9s elapsed | eta 3s
+Ep 112 | loss 0.1232 | task 0.1232 | cons 0.0000 | train 95.6% | test 81.6% | 13s
+  step 100/391 | loss 0.1237 | acc 95.7% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1248 | acc 95.6% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1224 | acc 95.7% | 9s elapsed | eta 3s
+Ep 113 | loss 0.1219 | task 0.1219 | cons 0.0000 | train 95.7% | test 82.4% | 13s
+  step 100/391 | loss 0.1185 | acc 96.0% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.1220 | acc 95.8% | 6s elapsed | eta 6s
+  step 300/391 | loss 0.1234 | acc 95.7% | 10s elapsed | eta 3s
+Ep 114 | loss 0.1242 | task 0.1242 | cons 0.0000 | train 95.6% | test 81.5% | 15s
+  step 100/391 | loss 0.1072 | acc 96.2% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.1116 | acc 96.0% | 8s elapsed | eta 8s
+  step 300/391 | loss 0.1101 | acc 96.1% | 12s elapsed | eta 4s
+Ep 115 | loss 0.1123 | task 0.1123 | cons 0.0000 | train 96.0% | test 81.8% | 19s
+  step 100/391 | loss 0.1123 | acc 95.9% | 5s elapsed | eta 15s
+  step 200/391 | loss 0.1126 | acc 96.0% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.1172 | acc 95.9% | 13s elapsed | eta 4s
+Ep 116 | loss 0.1184 | task 0.1184 | cons 0.0000 | train 95.8% | test 81.8% | 18s
+  step 100/391 | loss 0.1185 | acc 95.8% | 3s elapsed | eta 10s
+  step 200/391 | loss 0.1132 | acc 96.0% | 7s elapsed | eta 7s
+  step 300/391 | loss 0.1170 | acc 95.9% | 11s elapsed | eta 3s
+Ep 117 | loss 0.1162 | task 0.1162 | cons 0.0000 | train 95.9% | test 82.2% | 17s
+  step 100/391 | loss 0.1014 | acc 96.4% | 4s elapsed | eta 11s
+  step 200/391 | loss 0.1134 | acc 96.0% | 8s elapsed | eta 8s
+  step 300/391 | loss 0.1142 | acc 95.9% | 14s elapsed | eta 4s
+Ep 118 | loss 0.1154 | task 0.1154 | cons 0.0000 | train 95.9% | test 82.4% | 25s
+  step 100/391 | loss 0.1070 | acc 96.2% | 4s elapsed | eta 11s
+  step 200/391 | loss 0.1036 | acc 96.2% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.1107 | acc 96.0% | 14s elapsed | eta 4s
+Ep 119 | loss 0.1109 | task 0.1109 | cons 0.0000 | train 96.0% | test 82.3% | 22s
+  step 100/391 | loss 0.1084 | acc 96.1% | 7s elapsed | eta 19s
+  step 200/391 | loss 0.1160 | acc 95.8% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.1147 | acc 95.9% | 19s elapsed | eta 6s
+Ep 120 | loss 0.1140 | task 0.1140 | cons 0.0000 | train 95.9% | test 81.8% | 27s
+    K=1: 81.5%
+    K=2: 82.2%
+    K=4: 81.8%
+  step 100/391 | loss 0.1134 | acc 96.0% | 5s elapsed | eta 13s
+  step 200/391 | loss 0.1148 | acc 95.9% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.1182 | acc 95.8% | 17s elapsed | eta 5s
+Ep 121 | loss 0.1184 | task 0.1184 | cons 0.0000 | train 95.8% | test 82.8% | 25s
+  step 100/391 | loss 0.1136 | acc 96.1% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.1110 | acc 96.1% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.1140 | acc 96.0% | 17s elapsed | eta 5s
+Ep 122 | loss 0.1157 | task 0.1157 | cons 0.0000 | train 95.9% | test 81.8% | 27s
+  step 100/391 | loss 0.1048 | acc 96.4% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.1076 | acc 96.3% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.1092 | acc 96.2% | 17s elapsed | eta 5s
+Ep 123 | loss 0.1105 | task 0.1105 | cons 0.0000 | train 96.2% | test 82.6% | 26s
+  step 100/391 | loss 0.0980 | acc 96.7% | 5s elapsed | eta 13s
+  step 200/391 | loss 0.0964 | acc 96.7% | 9s elapsed | eta 8s
+  step 300/391 | loss 0.1026 | acc 96.5% | 13s elapsed | eta 4s
+Ep 124 | loss 0.1054 | task 0.1054 | cons 0.0000 | train 96.3% | test 82.2% | 20s
+  step 100/391 | loss 0.1022 | acc 96.5% | 8s elapsed | eta 22s
+  step 200/391 | loss 0.1062 | acc 96.3% | 14s elapsed | eta 14s
+  step 300/391 | loss 0.1028 | acc 96.4% | 19s elapsed | eta 6s
+Ep 125 | loss 0.1021 | task 0.1021 | cons 0.0000 | train 96.5% | test 82.2% | 24s
+  step 100/391 | loss 0.1033 | acc 96.4% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0973 | acc 96.7% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0986 | acc 96.6% | 20s elapsed | eta 6s
+Ep 126 | loss 0.1016 | task 0.1016 | cons 0.0000 | train 96.5% | test 82.3% | 28s
+  step 100/391 | loss 0.0983 | acc 96.6% | 7s elapsed | eta 22s
+  step 200/391 | loss 0.1002 | acc 96.5% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0989 | acc 96.5% | 18s elapsed | eta 5s
+Ep 127 | loss 0.1022 | task 0.1022 | cons 0.0000 | train 96.4% | test 82.1% | 29s
+  step 100/391 | loss 0.0961 | acc 96.6% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.1013 | acc 96.4% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0970 | acc 96.5% | 19s elapsed | eta 6s
+Ep 128 | loss 0.0988 | task 0.0988 | cons 0.0000 | train 96.5% | test 82.4% | 26s
+  step 100/391 | loss 0.0912 | acc 96.8% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0961 | acc 96.6% | 14s elapsed | eta 14s
+  step 300/391 | loss 0.0996 | acc 96.4% | 19s elapsed | eta 6s
+Ep 129 | loss 0.1031 | task 0.1031 | cons 0.0000 | train 96.3% | test 82.2% | 26s
+  step 100/391 | loss 0.0882 | acc 96.8% | 7s elapsed | eta 22s
+  step 200/391 | loss 0.0921 | acc 96.6% | 15s elapsed | eta 15s
+  step 300/391 | loss 0.0930 | acc 96.6% | 20s elapsed | eta 6s
+Ep 130 | loss 0.0944 | task 0.0944 | cons 0.0000 | train 96.6% | test 81.7% | 29s
+    K=1: 81.7%
+    K=2: 82.4%
+    K=4: 81.7%
+  step 100/391 | loss 0.0920 | acc 96.8% | 5s elapsed | eta 13s
+  step 200/391 | loss 0.0939 | acc 96.7% | 9s elapsed | eta 8s
+  step 300/391 | loss 0.0973 | acc 96.6% | 15s elapsed | eta 5s
+Ep 131 | loss 0.0956 | task 0.0956 | cons 0.0000 | train 96.6% | test 82.3% | 25s
+  step 100/391 | loss 0.0917 | acc 96.9% | 5s elapsed | eta 15s
+  step 200/391 | loss 0.0951 | acc 96.7% | 9s elapsed | eta 8s
+  step 300/391 | loss 0.0929 | acc 96.7% | 13s elapsed | eta 4s
+Ep 132 | loss 0.0933 | task 0.0933 | cons 0.0000 | train 96.7% | test 82.6% | 22s
+  step 100/391 | loss 0.0831 | acc 97.1% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0843 | acc 97.0% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0927 | acc 96.7% | 15s elapsed | eta 5s
+Ep 133 | loss 0.0934 | task 0.0934 | cons 0.0000 | train 96.7% | test 82.1% | 23s
+  step 100/391 | loss 0.0834 | acc 97.0% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0886 | acc 96.9% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0947 | acc 96.6% | 17s elapsed | eta 5s
+Ep 134 | loss 0.0915 | task 0.0915 | cons 0.0000 | train 96.7% | test 81.7% | 28s
+  step 100/391 | loss 0.0901 | acc 96.9% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0892 | acc 96.9% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0928 | acc 96.7% | 14s elapsed | eta 4s
+Ep 135 | loss 0.0955 | task 0.0955 | cons 0.0000 | train 96.6% | test 82.4% | 25s
+  step 100/391 | loss 0.0853 | acc 96.9% | 5s elapsed | eta 13s
+  step 200/391 | loss 0.0895 | acc 96.9% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0910 | acc 96.8% | 16s elapsed | eta 5s
+Ep 136 | loss 0.0908 | task 0.0908 | cons 0.0000 | train 96.8% | test 82.8% | 25s
+  step 100/391 | loss 0.0881 | acc 96.7% | 4s elapsed | eta 11s
+  step 200/391 | loss 0.0867 | acc 96.9% | 8s elapsed | eta 7s
+  step 300/391 | loss 0.0872 | acc 96.8% | 15s elapsed | eta 5s
+Ep 137 | loss 0.0889 | task 0.0889 | cons 0.0000 | train 96.8% | test 82.6% | 25s
+  step 100/391 | loss 0.0850 | acc 97.0% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0819 | acc 97.1% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0892 | acc 96.8% | 16s elapsed | eta 5s
+Ep 138 | loss 0.0899 | task 0.0899 | cons 0.0000 | train 96.8% | test 82.2% | 25s
+  step 100/391 | loss 0.0840 | acc 97.0% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0864 | acc 96.9% | 10s elapsed | eta 9s
+  step 300/391 | loss 0.0881 | acc 96.9% | 17s elapsed | eta 5s
+Ep 139 | loss 0.0890 | task 0.0890 | cons 0.0000 | train 96.9% | test 82.5% | 24s
+  step 100/391 | loss 0.0786 | acc 97.3% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0815 | acc 97.2% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0856 | acc 97.0% | 19s elapsed | eta 6s
+Ep 140 | loss 0.0887 | task 0.0887 | cons 0.0000 | train 96.9% | test 82.7% | 27s
+    K=1: 82.3%
+    K=2: 83.2%
+    K=4: 82.7%
+  step 100/391 | loss 0.0810 | acc 97.0% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0847 | acc 97.0% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.0852 | acc 97.0% | 17s elapsed | eta 5s
+Ep 141 | loss 0.0875 | task 0.0875 | cons 0.0000 | train 96.8% | test 82.7% | 26s
+  step 100/391 | loss 0.0758 | acc 97.3% | 5s elapsed | eta 15s
+  step 200/391 | loss 0.0793 | acc 97.3% | 10s elapsed | eta 9s
+  step 300/391 | loss 0.0835 | acc 97.1% | 16s elapsed | eta 5s
+Ep 142 | loss 0.0846 | task 0.0846 | cons 0.0000 | train 97.0% | test 82.8% | 24s
+  step 100/391 | loss 0.0814 | acc 97.0% | 5s elapsed | eta 15s
+  step 200/391 | loss 0.0816 | acc 97.0% | 10s elapsed | eta 9s
+  step 300/391 | loss 0.0815 | acc 97.0% | 13s elapsed | eta 4s
+Ep 143 | loss 0.0826 | task 0.0826 | cons 0.0000 | train 97.0% | test 82.8% | 24s
+  step 100/391 | loss 0.0837 | acc 97.0% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0836 | acc 97.0% | 10s elapsed | eta 9s
+  step 300/391 | loss 0.0838 | acc 97.0% | 15s elapsed | eta 5s
+Ep 144 | loss 0.0828 | task 0.0828 | cons 0.0000 | train 97.1% | test 82.7% | 26s
+  step 100/391 | loss 0.0862 | acc 97.0% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0859 | acc 97.0% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0855 | acc 97.0% | 18s elapsed | eta 5s
+Ep 145 | loss 0.0859 | task 0.0859 | cons 0.0000 | train 96.9% | test 81.4% | 26s
+  step 100/391 | loss 0.0756 | acc 97.4% | 8s elapsed | eta 22s
+  step 200/391 | loss 0.0774 | acc 97.3% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0762 | acc 97.4% | 19s elapsed | eta 6s
+Ep 146 | loss 0.0770 | task 0.0770 | cons 0.0000 | train 97.4% | test 82.4% | 29s
+  step 100/391 | loss 0.0652 | acc 97.7% | 5s elapsed | eta 15s
+  step 200/391 | loss 0.0681 | acc 97.7% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.0749 | acc 97.5% | 16s elapsed | eta 5s
+Ep 147 | loss 0.0777 | task 0.0777 | cons 0.0000 | train 97.4% | test 82.7% | 27s
+  step 100/391 | loss 0.0742 | acc 97.5% | 4s elapsed | eta 13s
+  step 200/391 | loss 0.0769 | acc 97.4% | 9s elapsed | eta 8s
+  step 300/391 | loss 0.0800 | acc 97.2% | 16s elapsed | eta 5s
+Ep 148 | loss 0.0801 | task 0.0801 | cons 0.0000 | train 97.2% | test 82.8% | 26s
+  step 100/391 | loss 0.0730 | acc 97.4% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0748 | acc 97.4% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.0732 | acc 97.4% | 17s elapsed | eta 5s
+Ep 149 | loss 0.0753 | task 0.0753 | cons 0.0000 | train 97.3% | test 82.3% | 25s
+  step 100/391 | loss 0.0633 | acc 97.8% | 6s elapsed | eta 19s
+  step 200/391 | loss 0.0666 | acc 97.7% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0706 | acc 97.5% | 20s elapsed | eta 6s
+Ep 150 | loss 0.0721 | task 0.0721 | cons 0.0000 | train 97.5% | test 81.9% | 29s
+    K=1: 81.6%
+    K=2: 82.4%
+    K=4: 81.9%
+  step 100/391 | loss 0.0733 | acc 97.5% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0756 | acc 97.4% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0720 | acc 97.5% | 19s elapsed | eta 6s
+Ep 151 | loss 0.0741 | task 0.0741 | cons 0.0000 | train 97.4% | test 82.3% | 25s
+  step 100/391 | loss 0.0722 | acc 97.6% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0759 | acc 97.4% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0748 | acc 97.4% | 18s elapsed | eta 6s
+Ep 152 | loss 0.0732 | task 0.0732 | cons 0.0000 | train 97.5% | test 82.8% | 25s
+  step 100/391 | loss 0.0677 | acc 97.7% | 8s elapsed | eta 23s
+  step 200/391 | loss 0.0715 | acc 97.5% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0688 | acc 97.6% | 18s elapsed | eta 5s
+Ep 153 | loss 0.0702 | task 0.0702 | cons 0.0000 | train 97.6% | test 82.1% | 25s
+  step 100/391 | loss 0.0608 | acc 97.9% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0671 | acc 97.7% | 13s elapsed | eta 13s
+  step 300/391 | loss 0.0651 | acc 97.8% | 19s elapsed | eta 6s
+Ep 154 | loss 0.0677 | task 0.0677 | cons 0.0000 | train 97.7% | test 82.9% | 26s
+  step 100/391 | loss 0.0648 | acc 97.7% | 7s elapsed | eta 19s
+  step 200/391 | loss 0.0689 | acc 97.6% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0682 | acc 97.6% | 17s elapsed | eta 5s
+Ep 155 | loss 0.0699 | task 0.0699 | cons 0.0000 | train 97.6% | test 82.5% | 26s
+  step 100/391 | loss 0.0641 | acc 97.7% | 7s elapsed | eta 19s
+  step 200/391 | loss 0.0679 | acc 97.7% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.0668 | acc 97.7% | 17s elapsed | eta 5s
+Ep 156 | loss 0.0659 | task 0.0659 | cons 0.0000 | train 97.7% | test 82.4% | 28s
+  step 100/391 | loss 0.0645 | acc 97.8% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0621 | acc 97.9% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0661 | acc 97.8% | 18s elapsed | eta 5s
+Ep 157 | loss 0.0670 | task 0.0670 | cons 0.0000 | train 97.7% | test 82.3% | 25s
+  step 100/391 | loss 0.0626 | acc 97.7% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0637 | acc 97.7% | 14s elapsed | eta 14s
+  step 300/391 | loss 0.0690 | acc 97.5% | 20s elapsed | eta 6s
+Ep 158 | loss 0.0697 | task 0.0697 | cons 0.0000 | train 97.5% | test 82.3% | 26s
+  step 100/391 | loss 0.0696 | acc 97.5% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0673 | acc 97.6% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0676 | acc 97.6% | 17s elapsed | eta 5s
+Ep 159 | loss 0.0684 | task 0.0684 | cons 0.0000 | train 97.6% | test 82.2% | 23s
+  step 100/391 | loss 0.0641 | acc 97.7% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0616 | acc 97.8% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0641 | acc 97.7% | 19s elapsed | eta 6s
+Ep 160 | loss 0.0665 | task 0.0665 | cons 0.0000 | train 97.7% | test 82.6% | 27s
+    K=1: 82.1%
+    K=2: 83.2%
+    K=4: 82.6%
+  step 100/391 | loss 0.0653 | acc 97.7% | 4s elapsed | eta 13s
+  step 200/391 | loss 0.0615 | acc 97.9% | 9s elapsed | eta 8s
+  step 300/391 | loss 0.0615 | acc 97.9% | 15s elapsed | eta 4s
+Ep 161 | loss 0.0621 | task 0.0621 | cons 0.0000 | train 97.8% | test 82.7% | 26s
+  step 100/391 | loss 0.0608 | acc 97.8% | 4s elapsed | eta 13s
+  step 200/391 | loss 0.0613 | acc 97.7% | 10s elapsed | eta 9s
+  step 300/391 | loss 0.0628 | acc 97.7% | 17s elapsed | eta 5s
+Ep 162 | loss 0.0654 | task 0.0654 | cons 0.0000 | train 97.6% | test 82.8% | 25s
+  step 100/391 | loss 0.0627 | acc 97.9% | 4s elapsed | eta 11s
+  step 200/391 | loss 0.0621 | acc 97.9% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0656 | acc 97.8% | 17s elapsed | eta 5s
+Ep 163 | loss 0.0662 | task 0.0662 | cons 0.0000 | train 97.8% | test 83.0% | 25s
+  step 100/391 | loss 0.0594 | acc 98.0% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0613 | acc 97.9% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0574 | acc 98.0% | 17s elapsed | eta 5s
+Ep 164 | loss 0.0601 | task 0.0601 | cons 0.0000 | train 97.9% | test 82.6% | 25s
+  step 100/391 | loss 0.0598 | acc 97.9% | 5s elapsed | eta 15s
+  step 200/391 | loss 0.0617 | acc 97.8% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0616 | acc 97.8% | 19s elapsed | eta 6s
+Ep 165 | loss 0.0605 | task 0.0605 | cons 0.0000 | train 97.9% | test 83.0% | 27s
+  step 100/391 | loss 0.0516 | acc 98.2% | 8s elapsed | eta 22s
+  step 200/391 | loss 0.0521 | acc 98.1% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0529 | acc 98.1% | 17s elapsed | eta 5s
+Ep 166 | loss 0.0556 | task 0.0556 | cons 0.0000 | train 98.0% | test 82.7% | 27s
+  step 100/391 | loss 0.0502 | acc 98.3% | 8s elapsed | eta 22s
+  step 200/391 | loss 0.0546 | acc 98.1% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0575 | acc 98.0% | 18s elapsed | eta 6s
+Ep 167 | loss 0.0582 | task 0.0582 | cons 0.0000 | train 98.0% | test 82.7% | 26s
+  step 100/391 | loss 0.0583 | acc 97.8% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0569 | acc 97.9% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0562 | acc 98.0% | 19s elapsed | eta 6s
+Ep 168 | loss 0.0562 | task 0.0562 | cons 0.0000 | train 98.0% | test 82.9% | 27s
+  step 100/391 | loss 0.0538 | acc 98.1% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0592 | acc 98.0% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0580 | acc 98.0% | 17s elapsed | eta 5s
+Ep 169 | loss 0.0573 | task 0.0573 | cons 0.0000 | train 98.0% | test 82.8% | 25s
+  step 100/391 | loss 0.0578 | acc 98.0% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0588 | acc 98.0% | 13s elapsed | eta 13s
+  step 300/391 | loss 0.0563 | acc 98.0% | 17s elapsed | eta 5s
+Ep 170 | loss 0.0552 | task 0.0552 | cons 0.0000 | train 98.1% | test 82.6% | 29s
+    K=1: 81.8%
+    K=2: 83.3%
+    K=4: 82.6%
+  step 100/391 | loss 0.0574 | acc 98.2% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0577 | acc 98.1% | 10s elapsed | eta 9s
+  step 300/391 | loss 0.0581 | acc 98.1% | 17s elapsed | eta 5s
+Ep 171 | loss 0.0569 | task 0.0569 | cons 0.0000 | train 98.1% | test 82.6% | 27s
+  step 100/391 | loss 0.0552 | acc 98.0% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0529 | acc 98.1% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0545 | acc 98.1% | 18s elapsed | eta 5s
+Ep 172 | loss 0.0547 | task 0.0547 | cons 0.0000 | train 98.1% | test 83.4% | 26s
+  step 100/391 | loss 0.0527 | acc 98.3% | 7s elapsed | eta 19s
+  step 200/391 | loss 0.0496 | acc 98.3% | 13s elapsed | eta 13s
+  step 300/391 | loss 0.0488 | acc 98.3% | 20s elapsed | eta 6s
+Ep 173 | loss 0.0527 | task 0.0527 | cons 0.0000 | train 98.2% | test 82.9% | 25s
+  step 100/391 | loss 0.0471 | acc 98.3% | 8s elapsed | eta 22s
+  step 200/391 | loss 0.0525 | acc 98.2% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0499 | acc 98.3% | 20s elapsed | eta 6s
+Ep 174 | loss 0.0535 | task 0.0535 | cons 0.0000 | train 98.1% | test 82.5% | 30s
+  step 100/391 | loss 0.0490 | acc 98.3% | 5s elapsed | eta 16s
+  step 200/391 | loss 0.0503 | acc 98.3% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0535 | acc 98.2% | 16s elapsed | eta 5s
+Ep 175 | loss 0.0533 | task 0.0533 | cons 0.0000 | train 98.2% | test 82.8% | 26s
+  step 100/391 | loss 0.0530 | acc 98.0% | 5s elapsed | eta 16s
+  step 200/391 | loss 0.0552 | acc 98.0% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.0520 | acc 98.1% | 18s elapsed | eta 5s
+Ep 176 | loss 0.0519 | task 0.0519 | cons 0.0000 | train 98.2% | test 83.2% | 25s
+  step 100/391 | loss 0.0456 | acc 98.4% | 5s elapsed | eta 13s
+  step 200/391 | loss 0.0486 | acc 98.3% | 9s elapsed | eta 8s
+  step 300/391 | loss 0.0491 | acc 98.3% | 16s elapsed | eta 5s
+Ep 177 | loss 0.0505 | task 0.0505 | cons 0.0000 | train 98.3% | test 82.7% | 25s
+  step 100/391 | loss 0.0443 | acc 98.5% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0531 | acc 98.1% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0520 | acc 98.1% | 20s elapsed | eta 6s
+Ep 178 | loss 0.0519 | task 0.0519 | cons 0.0000 | train 98.2% | test 82.8% | 27s
+  step 100/391 | loss 0.0520 | acc 98.1% | 8s elapsed | eta 22s
+  step 200/391 | loss 0.0468 | acc 98.3% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0464 | acc 98.3% | 18s elapsed | eta 5s
+Ep 179 | loss 0.0467 | task 0.0467 | cons 0.0000 | train 98.3% | test 82.8% | 28s
+  step 100/391 | loss 0.0495 | acc 98.3% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0496 | acc 98.3% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0483 | acc 98.4% | 16s elapsed | eta 5s
+Ep 180 | loss 0.0483 | task 0.0483 | cons 0.0000 | train 98.4% | test 82.8% | 22s
+    K=1: 82.6%
+    K=2: 83.6%
+    K=4: 82.8%
+  step 100/391 | loss 0.0483 | acc 98.5% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0497 | acc 98.4% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0484 | acc 98.4% | 14s elapsed | eta 4s
+Ep 181 | loss 0.0475 | task 0.0475 | cons 0.0000 | train 98.4% | test 83.1% | 25s
+  step 100/391 | loss 0.0428 | acc 98.5% | 8s elapsed | eta 22s
+  step 200/391 | loss 0.0447 | acc 98.5% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0442 | acc 98.5% | 19s elapsed | eta 6s
+Ep 182 | loss 0.0447 | task 0.0447 | cons 0.0000 | train 98.4% | test 82.7% | 27s
+  step 100/391 | loss 0.0493 | acc 98.3% | 5s elapsed | eta 16s
+  step 200/391 | loss 0.0474 | acc 98.3% | 13s elapsed | eta 13s
+  step 300/391 | loss 0.0479 | acc 98.3% | 20s elapsed | eta 6s
+Ep 183 | loss 0.0492 | task 0.0492 | cons 0.0000 | train 98.3% | test 82.9% | 26s
+  step 100/391 | loss 0.0371 | acc 98.6% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0429 | acc 98.5% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0430 | acc 98.5% | 18s elapsed | eta 6s
+Ep 184 | loss 0.0443 | task 0.0443 | cons 0.0000 | train 98.4% | test 83.0% | 29s
+  step 100/391 | loss 0.0388 | acc 98.6% | 6s elapsed | eta 16s
+  step 200/391 | loss 0.0394 | acc 98.6% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.0409 | acc 98.6% | 14s elapsed | eta 4s
+Ep 185 | loss 0.0450 | task 0.0450 | cons 0.0000 | train 98.5% | test 83.3% | 22s
+  step 100/391 | loss 0.0364 | acc 98.7% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0427 | acc 98.5% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0439 | acc 98.5% | 17s elapsed | eta 5s
+Ep 186 | loss 0.0433 | task 0.0433 | cons 0.0000 | train 98.5% | test 82.9% | 27s
+  step 100/391 | loss 0.0416 | acc 98.6% | 7s elapsed | eta 22s
+  step 200/391 | loss 0.0432 | acc 98.5% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0399 | acc 98.6% | 17s elapsed | eta 5s
+Ep 187 | loss 0.0415 | task 0.0415 | cons 0.0000 | train 98.6% | test 83.2% | 27s
+  step 100/391 | loss 0.0421 | acc 98.6% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0406 | acc 98.6% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.0421 | acc 98.6% | 17s elapsed | eta 5s
+Ep 188 | loss 0.0427 | task 0.0427 | cons 0.0000 | train 98.5% | test 82.8% | 25s
+  step 100/391 | loss 0.0452 | acc 98.5% | 6s elapsed | eta 16s
+  step 200/391 | loss 0.0440 | acc 98.4% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0436 | acc 98.5% | 19s elapsed | eta 6s
+Ep 189 | loss 0.0427 | task 0.0427 | cons 0.0000 | train 98.5% | test 82.7% | 27s
+  step 100/391 | loss 0.0293 | acc 99.0% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0331 | acc 98.9% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0339 | acc 98.9% | 19s elapsed | eta 6s
+Ep 190 | loss 0.0363 | task 0.0363 | cons 0.0000 | train 98.8% | test 83.1% | 28s
+    K=1: 82.6%
+    K=2: 83.7%
+    K=4: 83.1%
+  step 100/391 | loss 0.0390 | acc 98.7% | 5s elapsed | eta 13s
+  step 200/391 | loss 0.0392 | acc 98.7% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0401 | acc 98.7% | 18s elapsed | eta 5s
+Ep 191 | loss 0.0408 | task 0.0408 | cons 0.0000 | train 98.6% | test 83.3% | 26s
+  step 100/391 | loss 0.0413 | acc 98.6% | 5s elapsed | eta 15s
+  step 200/391 | loss 0.0415 | acc 98.6% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0416 | acc 98.6% | 18s elapsed | eta 6s
+Ep 192 | loss 0.0406 | task 0.0406 | cons 0.0000 | train 98.6% | test 83.3% | 26s
+  step 100/391 | loss 0.0349 | acc 98.8% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0359 | acc 98.8% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0358 | acc 98.8% | 19s elapsed | eta 6s
+Ep 193 | loss 0.0368 | task 0.0368 | cons 0.0000 | train 98.7% | test 83.6% | 26s
+  step 100/391 | loss 0.0363 | acc 98.8% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0375 | acc 98.7% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0396 | acc 98.6% | 19s elapsed | eta 6s
+Ep 194 | loss 0.0395 | task 0.0395 | cons 0.0000 | train 98.6% | test 83.5% | 28s
+  step 100/391 | loss 0.0379 | acc 98.7% | 7s elapsed | eta 19s
+  step 200/391 | loss 0.0375 | acc 98.7% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0370 | acc 98.7% | 18s elapsed | eta 5s
+Ep 195 | loss 0.0361 | task 0.0361 | cons 0.0000 | train 98.7% | test 82.9% | 28s
+  step 100/391 | loss 0.0422 | acc 98.6% | 3s elapsed | eta 10s
+  step 200/391 | loss 0.0384 | acc 98.6% | 8s elapsed | eta 8s
+  step 300/391 | loss 0.0366 | acc 98.7% | 12s elapsed | eta 4s
+Ep 196 | loss 0.0358 | task 0.0358 | cons 0.0000 | train 98.8% | test 82.8% | 22s
+  step 100/391 | loss 0.0332 | acc 98.8% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0328 | acc 98.9% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0328 | acc 98.9% | 18s elapsed | eta 5s
+Ep 197 | loss 0.0339 | task 0.0339 | cons 0.0000 | train 98.8% | test 83.7% | 28s
+  step 100/391 | loss 0.0295 | acc 98.9% | 5s elapsed | eta 15s
+  step 200/391 | loss 0.0332 | acc 98.8% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0359 | acc 98.7% | 19s elapsed | eta 6s
+Ep 198 | loss 0.0378 | task 0.0378 | cons 0.0000 | train 98.6% | test 83.2% | 25s
+  step 100/391 | loss 0.0310 | acc 99.0% | 4s elapsed | eta 13s
+  step 200/391 | loss 0.0340 | acc 98.9% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0342 | acc 98.9% | 18s elapsed | eta 6s
+Ep 199 | loss 0.0339 | task 0.0339 | cons 0.0000 | train 98.9% | test 83.2% | 25s
+  step 100/391 | loss 0.0385 | acc 98.7% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0341 | acc 98.8% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0337 | acc 98.8% | 19s elapsed | eta 6s
+Ep 200 | loss 0.0326 | task 0.0326 | cons 0.0000 | train 98.9% | test 83.2% | 25s
+    K=1: 82.9%
+    K=2: 83.7%
+    K=4: 83.2%
+  step 100/391 | loss 0.0331 | acc 98.9% | 8s elapsed | eta 23s
+  step 200/391 | loss 0.0327 | acc 98.9% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0355 | acc 98.8% | 17s elapsed | eta 5s
+Ep 201 | loss 0.0363 | task 0.0363 | cons 0.0000 | train 98.8% | test 83.3% | 25s
+  step 100/391 | loss 0.0271 | acc 99.1% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0311 | acc 98.9% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0321 | acc 98.9% | 16s elapsed | eta 5s
+Ep 202 | loss 0.0323 | task 0.0323 | cons 0.0000 | train 98.9% | test 83.2% | 22s
+  step 100/391 | loss 0.0331 | acc 98.9% | 4s elapsed | eta 11s
+  step 200/391 | loss 0.0339 | acc 98.9% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0327 | acc 98.9% | 17s elapsed | eta 5s
+Ep 203 | loss 0.0319 | task 0.0319 | cons 0.0000 | train 98.9% | test 83.7% | 29s
+  step 100/391 | loss 0.0314 | acc 98.9% | 7s elapsed | eta 22s
+  step 200/391 | loss 0.0330 | acc 98.8% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0352 | acc 98.8% | 18s elapsed | eta 5s
+Ep 204 | loss 0.0335 | task 0.0335 | cons 0.0000 | train 98.8% | test 83.0% | 28s
+  step 100/391 | loss 0.0340 | acc 98.8% | 5s elapsed | eta 15s
+  step 200/391 | loss 0.0315 | acc 98.9% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0307 | acc 98.9% | 20s elapsed | eta 6s
+Ep 205 | loss 0.0300 | task 0.0300 | cons 0.0000 | train 99.0% | test 83.6% | 26s
+  step 100/391 | loss 0.0373 | acc 98.7% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0327 | acc 98.8% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0314 | acc 98.9% | 18s elapsed | eta 6s
+Ep 206 | loss 0.0318 | task 0.0318 | cons 0.0000 | train 98.9% | test 83.4% | 28s
+  step 100/391 | loss 0.0285 | acc 98.9% | 8s elapsed | eta 23s
+  step 200/391 | loss 0.0289 | acc 98.9% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0300 | acc 98.9% | 15s elapsed | eta 5s
+Ep 207 | loss 0.0299 | task 0.0299 | cons 0.0000 | train 98.9% | test 83.5% | 25s
+  step 100/391 | loss 0.0276 | acc 99.1% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0303 | acc 99.0% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0273 | acc 99.1% | 15s elapsed | eta 5s
+Ep 208 | loss 0.0283 | task 0.0283 | cons 0.0000 | train 99.0% | test 83.5% | 24s
+  step 100/391 | loss 0.0303 | acc 98.9% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0286 | acc 99.0% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0270 | acc 99.1% | 16s elapsed | eta 5s
+Ep 209 | loss 0.0270 | task 0.0270 | cons 0.0000 | train 99.1% | test 83.7% | 26s
+  step 100/391 | loss 0.0303 | acc 98.9% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0304 | acc 98.9% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0304 | acc 98.9% | 13s elapsed | eta 4s
+Ep 210 | loss 0.0322 | task 0.0322 | cons 0.0000 | train 98.9% | test 83.4% | 22s
+    K=1: 82.9%
+    K=2: 83.9%
+    K=4: 83.4%
+  step 100/391 | loss 0.0217 | acc 99.3% | 4s elapsed | eta 13s
+  step 200/391 | loss 0.0250 | acc 99.2% | 9s elapsed | eta 8s
+  step 300/391 | loss 0.0253 | acc 99.1% | 16s elapsed | eta 5s
+Ep 211 | loss 0.0265 | task 0.0265 | cons 0.0000 | train 99.1% | test 83.6% | 25s
+  step 100/391 | loss 0.0301 | acc 98.9% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0272 | acc 99.1% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0271 | acc 99.1% | 18s elapsed | eta 6s
+Ep 212 | loss 0.0275 | task 0.0275 | cons 0.0000 | train 99.1% | test 83.4% | 26s
+  step 100/391 | loss 0.0280 | acc 99.0% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0298 | acc 99.0% | 14s elapsed | eta 14s
+  step 300/391 | loss 0.0286 | acc 99.0% | 20s elapsed | eta 6s
+Ep 213 | loss 0.0283 | task 0.0283 | cons 0.0000 | train 99.1% | test 83.9% | 28s
+  step 100/391 | loss 0.0299 | acc 99.0% | 6s elapsed | eta 16s
+  step 200/391 | loss 0.0308 | acc 99.0% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0290 | acc 99.0% | 18s elapsed | eta 5s
+Ep 214 | loss 0.0272 | task 0.0272 | cons 0.0000 | train 99.1% | test 83.3% | 26s
+  step 100/391 | loss 0.0282 | acc 99.1% | 6s elapsed | eta 19s
+  step 200/391 | loss 0.0263 | acc 99.1% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0245 | acc 99.2% | 18s elapsed | eta 5s
+Ep 215 | loss 0.0255 | task 0.0255 | cons 0.0000 | train 99.1% | test 83.3% | 28s
+  step 100/391 | loss 0.0222 | acc 99.3% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0249 | acc 99.2% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0246 | acc 99.1% | 17s elapsed | eta 5s
+Ep 216 | loss 0.0245 | task 0.0245 | cons 0.0000 | train 99.1% | test 83.6% | 26s
+  step 100/391 | loss 0.0288 | acc 99.0% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0275 | acc 99.1% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0267 | acc 99.1% | 19s elapsed | eta 6s
+Ep 217 | loss 0.0275 | task 0.0275 | cons 0.0000 | train 99.1% | test 84.0% | 27s
+  step 100/391 | loss 0.0250 | acc 99.1% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0239 | acc 99.2% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0240 | acc 99.2% | 16s elapsed | eta 5s
+Ep 218 | loss 0.0246 | task 0.0246 | cons 0.0000 | train 99.2% | test 83.4% | 25s
+  step 100/391 | loss 0.0239 | acc 99.2% | 6s elapsed | eta 16s
+  step 200/391 | loss 0.0219 | acc 99.3% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0219 | acc 99.3% | 16s elapsed | eta 5s
+Ep 219 | loss 0.0223 | task 0.0223 | cons 0.0000 | train 99.3% | test 83.6% | 22s
+  step 100/391 | loss 0.0241 | acc 99.2% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0235 | acc 99.2% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0238 | acc 99.2% | 19s elapsed | eta 6s
+Ep 220 | loss 0.0231 | task 0.0231 | cons 0.0000 | train 99.2% | test 83.7% | 28s
+    K=1: 83.0%
+    K=2: 84.1%
+    K=4: 83.7%
+  step 100/391 | loss 0.0192 | acc 99.4% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0224 | acc 99.3% | 13s elapsed | eta 13s
+  step 300/391 | loss 0.0222 | acc 99.3% | 20s elapsed | eta 6s
+Ep 221 | loss 0.0216 | task 0.0216 | cons 0.0000 | train 99.3% | test 83.4% | 29s
+  step 100/391 | loss 0.0215 | acc 99.2% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0212 | acc 99.3% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0219 | acc 99.3% | 15s elapsed | eta 5s
+Ep 222 | loss 0.0224 | task 0.0224 | cons 0.0000 | train 99.2% | test 83.6% | 24s
+  step 100/391 | loss 0.0200 | acc 99.3% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0232 | acc 99.2% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0236 | acc 99.2% | 16s elapsed | eta 5s
+Ep 223 | loss 0.0230 | task 0.0230 | cons 0.0000 | train 99.2% | test 83.9% | 25s
+  step 100/391 | loss 0.0216 | acc 99.2% | 3s elapsed | eta 10s
+  step 200/391 | loss 0.0242 | acc 99.2% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0232 | acc 99.2% | 15s elapsed | eta 4s
+Ep 224 | loss 0.0234 | task 0.0234 | cons 0.0000 | train 99.2% | test 83.8% | 21s
+  step 100/391 | loss 0.0197 | acc 99.3% | 7s elapsed | eta 22s
+  step 200/391 | loss 0.0223 | acc 99.2% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0226 | acc 99.2% | 19s elapsed | eta 6s
+Ep 225 | loss 0.0224 | task 0.0224 | cons 0.0000 | train 99.2% | test 83.5% | 28s
+  step 100/391 | loss 0.0214 | acc 99.3% | 5s elapsed | eta 13s
+  step 200/391 | loss 0.0203 | acc 99.3% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0204 | acc 99.3% | 17s elapsed | eta 5s
+Ep 226 | loss 0.0209 | task 0.0209 | cons 0.0000 | train 99.3% | test 83.6% | 22s
+  step 100/391 | loss 0.0235 | acc 99.1% | 4s elapsed | eta 11s
+  step 200/391 | loss 0.0219 | acc 99.2% | 7s elapsed | eta 7s
+  step 300/391 | loss 0.0219 | acc 99.2% | 11s elapsed | eta 3s
+Ep 227 | loss 0.0204 | task 0.0204 | cons 0.0000 | train 99.3% | test 83.7% | 17s
+  step 100/391 | loss 0.0152 | acc 99.5% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0167 | acc 99.4% | 10s elapsed | eta 9s
+  step 300/391 | loss 0.0173 | acc 99.4% | 14s elapsed | eta 4s
+Ep 228 | loss 0.0174 | task 0.0174 | cons 0.0000 | train 99.4% | test 83.7% | 20s
+  step 100/391 | loss 0.0187 | acc 99.3% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0173 | acc 99.4% | 13s elapsed | eta 13s
+  step 300/391 | loss 0.0179 | acc 99.4% | 18s elapsed | eta 6s
+Ep 229 | loss 0.0199 | task 0.0199 | cons 0.0000 | train 99.3% | test 83.6% | 24s
+  step 100/391 | loss 0.0187 | acc 99.4% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0206 | acc 99.3% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0208 | acc 99.3% | 18s elapsed | eta 5s
+Ep 230 | loss 0.0198 | task 0.0198 | cons 0.0000 | train 99.3% | test 83.7% | 24s
+    K=1: 83.6%
+    K=2: 84.2%
+    K=4: 83.7%
+  step 100/391 | loss 0.0178 | acc 99.4% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.0172 | acc 99.4% | 8s elapsed | eta 8s
+  step 300/391 | loss 0.0175 | acc 99.4% | 14s elapsed | eta 4s
+Ep 231 | loss 0.0181 | task 0.0181 | cons 0.0000 | train 99.4% | test 83.9% | 22s
+  step 100/391 | loss 0.0123 | acc 99.6% | 3s elapsed | eta 9s
+  step 200/391 | loss 0.0182 | acc 99.3% | 7s elapsed | eta 6s
+  step 300/391 | loss 0.0186 | acc 99.3% | 11s elapsed | eta 3s
+Ep 232 | loss 0.0187 | task 0.0187 | cons 0.0000 | train 99.3% | test 83.6% | 19s
+  step 100/391 | loss 0.0188 | acc 99.4% | 6s elapsed | eta 16s
+  step 200/391 | loss 0.0177 | acc 99.4% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0179 | acc 99.4% | 16s elapsed | eta 5s
+Ep 233 | loss 0.0177 | task 0.0177 | cons 0.0000 | train 99.4% | test 84.1% | 29s
+  step 100/391 | loss 0.0139 | acc 99.5% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0162 | acc 99.5% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0165 | acc 99.5% | 16s elapsed | eta 5s
+Ep 234 | loss 0.0172 | task 0.0172 | cons 0.0000 | train 99.4% | test 83.8% | 26s
+  step 100/391 | loss 0.0207 | acc 99.3% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0188 | acc 99.4% | 10s elapsed | eta 9s
+  step 300/391 | loss 0.0177 | acc 99.4% | 15s elapsed | eta 5s
+Ep 235 | loss 0.0170 | task 0.0170 | cons 0.0000 | train 99.4% | test 84.1% | 27s
+  step 100/391 | loss 0.0107 | acc 99.6% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0134 | acc 99.6% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0142 | acc 99.6% | 17s elapsed | eta 5s
+Ep 236 | loss 0.0142 | task 0.0142 | cons 0.0000 | train 99.5% | test 84.0% | 27s
+  step 100/391 | loss 0.0167 | acc 99.5% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0161 | acc 99.5% | 10s elapsed | eta 9s
+  step 300/391 | loss 0.0164 | acc 99.5% | 16s elapsed | eta 5s
+Ep 237 | loss 0.0166 | task 0.0166 | cons 0.0000 | train 99.5% | test 83.8% | 24s
+  step 100/391 | loss 0.0180 | acc 99.4% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0176 | acc 99.4% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0180 | acc 99.4% | 18s elapsed | eta 6s
+Ep 238 | loss 0.0174 | task 0.0174 | cons 0.0000 | train 99.4% | test 83.9% | 26s
+  step 100/391 | loss 0.0177 | acc 99.5% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0150 | acc 99.6% | 14s elapsed | eta 14s
+  step 300/391 | loss 0.0149 | acc 99.5% | 19s elapsed | eta 6s
+Ep 239 | loss 0.0151 | task 0.0151 | cons 0.0000 | train 99.5% | test 83.9% | 26s
+  step 100/391 | loss 0.0131 | acc 99.5% | 7s elapsed | eta 19s
+  step 200/391 | loss 0.0158 | acc 99.4% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0157 | acc 99.5% | 19s elapsed | eta 6s
+Ep 240 | loss 0.0157 | task 0.0157 | cons 0.0000 | train 99.5% | test 83.8% | 28s
+    K=1: 83.9%
+    K=2: 84.6%
+    K=4: 83.8%
+  step 100/391 | loss 0.0174 | acc 99.4% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0179 | acc 99.4% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0172 | acc 99.4% | 19s elapsed | eta 6s
+Ep 241 | loss 0.0168 | task 0.0168 | cons 0.0000 | train 99.4% | test 83.7% | 27s
+  step 100/391 | loss 0.0136 | acc 99.6% | 8s elapsed | eta 22s
+  step 200/391 | loss 0.0146 | acc 99.5% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0144 | acc 99.5% | 18s elapsed | eta 5s
+Ep 242 | loss 0.0139 | task 0.0139 | cons 0.0000 | train 99.6% | test 83.9% | 25s
+  step 100/391 | loss 0.0100 | acc 99.7% | 4s elapsed | eta 13s
+  step 200/391 | loss 0.0110 | acc 99.6% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0127 | acc 99.5% | 19s elapsed | eta 6s
+Ep 243 | loss 0.0126 | task 0.0126 | cons 0.0000 | train 99.5% | test 84.1% | 27s
+  step 100/391 | loss 0.0126 | acc 99.6% | 8s elapsed | eta 24s
+  step 200/391 | loss 0.0132 | acc 99.6% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0131 | acc 99.6% | 18s elapsed | eta 6s
+Ep 244 | loss 0.0139 | task 0.0139 | cons 0.0000 | train 99.5% | test 83.9% | 27s
+  step 100/391 | loss 0.0140 | acc 99.5% | 7s elapsed | eta 19s
+  step 200/391 | loss 0.0152 | acc 99.5% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0146 | acc 99.5% | 19s elapsed | eta 6s
+Ep 245 | loss 0.0142 | task 0.0142 | cons 0.0000 | train 99.5% | test 83.9% | 28s
+  step 100/391 | loss 0.0108 | acc 99.7% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0127 | acc 99.6% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0114 | acc 99.6% | 16s elapsed | eta 5s
+Ep 246 | loss 0.0115 | task 0.0115 | cons 0.0000 | train 99.6% | test 84.0% | 26s
+  step 100/391 | loss 0.0161 | acc 99.4% | 5s elapsed | eta 16s
+  step 200/391 | loss 0.0146 | acc 99.5% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.0137 | acc 99.5% | 18s elapsed | eta 5s
+Ep 247 | loss 0.0133 | task 0.0133 | cons 0.0000 | train 99.6% | test 84.2% | 25s
+  step 100/391 | loss 0.0164 | acc 99.4% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0155 | acc 99.4% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0151 | acc 99.5% | 17s elapsed | eta 5s
+Ep 248 | loss 0.0143 | task 0.0143 | cons 0.0000 | train 99.5% | test 84.1% | 28s
+  step 100/391 | loss 0.0112 | acc 99.6% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0117 | acc 99.6% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0123 | acc 99.6% | 17s elapsed | eta 5s
+Ep 249 | loss 0.0118 | task 0.0118 | cons 0.0000 | train 99.6% | test 84.0% | 27s
+  step 100/391 | loss 0.0106 | acc 99.6% | 8s elapsed | eta 22s
+  step 200/391 | loss 0.0121 | acc 99.6% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0126 | acc 99.6% | 16s elapsed | eta 5s
+Ep 250 | loss 0.0117 | task 0.0117 | cons 0.0000 | train 99.6% | test 84.1% | 26s
+    K=1: 83.7%
+    K=2: 84.7%
+    K=4: 84.1%
+  step 100/391 | loss 0.0092 | acc 99.7% | 4s elapsed | eta 11s
+  step 200/391 | loss 0.0101 | acc 99.6% | 7s elapsed | eta 7s
+  step 300/391 | loss 0.0106 | acc 99.6% | 14s elapsed | eta 4s
+Ep 251 | loss 0.0114 | task 0.0114 | cons 0.0000 | train 99.6% | test 84.0% | 24s
+  step 100/391 | loss 0.0128 | acc 99.6% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0112 | acc 99.6% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0104 | acc 99.6% | 20s elapsed | eta 6s
+Ep 252 | loss 0.0107 | task 0.0107 | cons 0.0000 | train 99.6% | test 83.9% | 26s
+  step 100/391 | loss 0.0107 | acc 99.6% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0119 | acc 99.6% | 13s elapsed | eta 13s
+  step 300/391 | loss 0.0111 | acc 99.6% | 20s elapsed | eta 6s
+Ep 253 | loss 0.0114 | task 0.0114 | cons 0.0000 | train 99.6% | test 84.0% | 30s
+  step 100/391 | loss 0.0125 | acc 99.6% | 7s elapsed | eta 19s
+  step 200/391 | loss 0.0115 | acc 99.6% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0118 | acc 99.6% | 19s elapsed | eta 6s
+Ep 254 | loss 0.0121 | task 0.0121 | cons 0.0000 | train 99.6% | test 83.9% | 27s
+  step 100/391 | loss 0.0139 | acc 99.6% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0120 | acc 99.6% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0113 | acc 99.6% | 16s elapsed | eta 5s
+Ep 255 | loss 0.0117 | task 0.0117 | cons 0.0000 | train 99.6% | test 84.2% | 27s
+  step 100/391 | loss 0.0118 | acc 99.7% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0108 | acc 99.7% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0105 | acc 99.7% | 16s elapsed | eta 5s
+Ep 256 | loss 0.0111 | task 0.0111 | cons 0.0000 | train 99.7% | test 83.9% | 26s
+  step 100/391 | loss 0.0123 | acc 99.6% | 6s elapsed | eta 16s
+  step 200/391 | loss 0.0117 | acc 99.6% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0120 | acc 99.6% | 14s elapsed | eta 4s
+Ep 257 | loss 0.0119 | task 0.0119 | cons 0.0000 | train 99.6% | test 83.9% | 26s
+  step 100/391 | loss 0.0109 | acc 99.6% | 5s elapsed | eta 16s
+  step 200/391 | loss 0.0112 | acc 99.6% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0115 | acc 99.6% | 17s elapsed | eta 5s
+Ep 258 | loss 0.0103 | task 0.0103 | cons 0.0000 | train 99.7% | test 84.2% | 27s
+  step 100/391 | loss 0.0139 | acc 99.5% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0139 | acc 99.5% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0137 | acc 99.5% | 16s elapsed | eta 5s
+Ep 259 | loss 0.0138 | task 0.0138 | cons 0.0000 | train 99.5% | test 84.0% | 23s
+  step 100/391 | loss 0.0102 | acc 99.6% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0105 | acc 99.6% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0111 | acc 99.6% | 19s elapsed | eta 6s
+Ep 260 | loss 0.0109 | task 0.0109 | cons 0.0000 | train 99.6% | test 84.2% | 26s
+    K=1: 83.9%
+    K=2: 84.7%
+    K=4: 84.2%
+  step 100/391 | loss 0.0088 | acc 99.7% | 7s elapsed | eta 22s
+  step 200/391 | loss 0.0091 | acc 99.7% | 15s elapsed | eta 14s
+  step 300/391 | loss 0.0096 | acc 99.7% | 19s elapsed | eta 6s
+Ep 261 | loss 0.0101 | task 0.0101 | cons 0.0000 | train 99.7% | test 84.3% | 30s
+  step 100/391 | loss 0.0092 | acc 99.7% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0086 | acc 99.7% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0099 | acc 99.7% | 15s elapsed | eta 5s
+Ep 262 | loss 0.0103 | task 0.0103 | cons 0.0000 | train 99.6% | test 84.2% | 26s
+  step 100/391 | loss 0.0106 | acc 99.7% | 5s elapsed | eta 13s
+  step 200/391 | loss 0.0112 | acc 99.7% | 10s elapsed | eta 9s
+  step 300/391 | loss 0.0101 | acc 99.7% | 18s elapsed | eta 5s
+Ep 263 | loss 0.0103 | task 0.0103 | cons 0.0000 | train 99.7% | test 84.2% | 26s
+  step 100/391 | loss 0.0069 | acc 99.8% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0084 | acc 99.7% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0083 | acc 99.7% | 21s elapsed | eta 6s
+Ep 264 | loss 0.0090 | task 0.0090 | cons 0.0000 | train 99.7% | test 84.3% | 26s
+  step 100/391 | loss 0.0112 | acc 99.6% | 7s elapsed | eta 19s
+  step 200/391 | loss 0.0115 | acc 99.6% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0111 | acc 99.6% | 18s elapsed | eta 6s
+Ep 265 | loss 0.0111 | task 0.0111 | cons 0.0000 | train 99.6% | test 84.4% | 25s
+  step 100/391 | loss 0.0102 | acc 99.7% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0123 | acc 99.6% | 13s elapsed | eta 13s
+  step 300/391 | loss 0.0107 | acc 99.6% | 18s elapsed | eta 5s
+Ep 266 | loss 0.0104 | task 0.0104 | cons 0.0000 | train 99.7% | test 84.2% | 25s
+  step 100/391 | loss 0.0065 | acc 99.8% | 8s elapsed | eta 23s
+  step 200/391 | loss 0.0072 | acc 99.7% | 15s elapsed | eta 15s
+  step 300/391 | loss 0.0072 | acc 99.7% | 20s elapsed | eta 6s
+Ep 267 | loss 0.0077 | task 0.0077 | cons 0.0000 | train 99.7% | test 84.5% | 29s
+  step 100/391 | loss 0.0100 | acc 99.6% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0096 | acc 99.7% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0096 | acc 99.7% | 17s elapsed | eta 5s
+Ep 268 | loss 0.0092 | task 0.0092 | cons 0.0000 | train 99.7% | test 84.2% | 29s
+  step 100/391 | loss 0.0077 | acc 99.7% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0078 | acc 99.7% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0085 | acc 99.7% | 20s elapsed | eta 6s
+Ep 269 | loss 0.0079 | task 0.0079 | cons 0.0000 | train 99.8% | test 84.2% | 26s
+  step 100/391 | loss 0.0094 | acc 99.7% | 4s elapsed | eta 13s
+  step 200/391 | loss 0.0085 | acc 99.7% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.0092 | acc 99.7% | 18s elapsed | eta 5s
+Ep 270 | loss 0.0093 | task 0.0093 | cons 0.0000 | train 99.7% | test 84.1% | 26s
+    K=1: 84.0%
+    K=2: 85.0%
+    K=4: 84.1%
+  step 100/391 | loss 0.0084 | acc 99.7% | 5s elapsed | eta 16s
+  step 200/391 | loss 0.0092 | acc 99.7% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0090 | acc 99.7% | 13s elapsed | eta 4s
+Ep 271 | loss 0.0092 | task 0.0092 | cons 0.0000 | train 99.7% | test 84.2% | 24s
+  step 100/391 | loss 0.0125 | acc 99.6% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0111 | acc 99.6% | 10s elapsed | eta 10s
+  step 300/391 | loss 0.0103 | acc 99.6% | 14s elapsed | eta 4s
+Ep 272 | loss 0.0105 | task 0.0105 | cons 0.0000 | train 99.6% | test 84.5% | 24s
+  step 100/391 | loss 0.0080 | acc 99.7% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0078 | acc 99.7% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0075 | acc 99.8% | 17s elapsed | eta 5s
+Ep 273 | loss 0.0083 | task 0.0083 | cons 0.0000 | train 99.7% | test 84.3% | 29s
+  step 100/391 | loss 0.0070 | acc 99.7% | 4s elapsed | eta 11s
+  step 200/391 | loss 0.0092 | acc 99.7% | 7s elapsed | eta 7s
+  step 300/391 | loss 0.0085 | acc 99.7% | 14s elapsed | eta 4s
+Ep 274 | loss 0.0084 | task 0.0084 | cons 0.0000 | train 99.7% | test 84.2% | 22s
+  step 100/391 | loss 0.0075 | acc 99.7% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0073 | acc 99.8% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0078 | acc 99.7% | 18s elapsed | eta 5s
+Ep 275 | loss 0.0082 | task 0.0082 | cons 0.0000 | train 99.7% | test 84.2% | 22s
+  step 100/391 | loss 0.0093 | acc 99.7% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0070 | acc 99.8% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0078 | acc 99.7% | 14s elapsed | eta 4s
+Ep 276 | loss 0.0075 | task 0.0075 | cons 0.0000 | train 99.7% | test 84.1% | 22s
+  step 100/391 | loss 0.0092 | acc 99.7% | 7s elapsed | eta 19s
+  step 200/391 | loss 0.0084 | acc 99.7% | 14s elapsed | eta 14s
+  step 300/391 | loss 0.0082 | acc 99.7% | 20s elapsed | eta 6s
+Ep 277 | loss 0.0084 | task 0.0084 | cons 0.0000 | train 99.7% | test 84.3% | 26s
+  step 100/391 | loss 0.0098 | acc 99.6% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0093 | acc 99.7% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0078 | acc 99.7% | 18s elapsed | eta 5s
+Ep 278 | loss 0.0075 | task 0.0075 | cons 0.0000 | train 99.7% | test 84.3% | 24s
+  step 100/391 | loss 0.0083 | acc 99.7% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0093 | acc 99.7% | 8s elapsed | eta 8s
+  step 300/391 | loss 0.0093 | acc 99.7% | 15s elapsed | eta 5s
+Ep 279 | loss 0.0087 | task 0.0087 | cons 0.0000 | train 99.7% | test 84.2% | 25s
+  step 100/391 | loss 0.0069 | acc 99.8% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0072 | acc 99.8% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0078 | acc 99.7% | 16s elapsed | eta 5s
+Ep 280 | loss 0.0075 | task 0.0075 | cons 0.0000 | train 99.7% | test 84.3% | 25s
+    K=1: 84.0%
+    K=2: 85.0%
+    K=4: 84.3%
+  step 100/391 | loss 0.0098 | acc 99.7% | 7s elapsed | eta 20s
+  step 200/391 | loss 0.0081 | acc 99.7% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0083 | acc 99.7% | 16s elapsed | eta 5s
+Ep 281 | loss 0.0087 | task 0.0087 | cons 0.0000 | train 99.7% | test 84.2% | 27s
+  step 100/391 | loss 0.0126 | acc 99.5% | 6s elapsed | eta 16s
+  step 200/391 | loss 0.0107 | acc 99.6% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0102 | acc 99.6% | 14s elapsed | eta 4s
+Ep 282 | loss 0.0098 | task 0.0098 | cons 0.0000 | train 99.7% | test 84.2% | 25s
+  step 100/391 | loss 0.0090 | acc 99.7% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0079 | acc 99.7% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0082 | acc 99.7% | 18s elapsed | eta 5s
+Ep 283 | loss 0.0082 | task 0.0082 | cons 0.0000 | train 99.7% | test 84.2% | 26s
+  step 100/391 | loss 0.0053 | acc 99.8% | 4s elapsed | eta 11s
+  step 200/391 | loss 0.0059 | acc 99.8% | 9s elapsed | eta 9s
+  step 300/391 | loss 0.0072 | acc 99.7% | 13s elapsed | eta 4s
+Ep 284 | loss 0.0074 | task 0.0074 | cons 0.0000 | train 99.7% | test 84.2% | 23s
+  step 100/391 | loss 0.0061 | acc 99.8% | 7s elapsed | eta 19s
+  step 200/391 | loss 0.0066 | acc 99.8% | 11s elapsed | eta 11s
+  step 300/391 | loss 0.0063 | acc 99.8% | 18s elapsed | eta 6s
+Ep 285 | loss 0.0061 | task 0.0061 | cons 0.0000 | train 99.8% | test 84.3% | 28s
+  step 100/391 | loss 0.0041 | acc 99.9% | 6s elapsed | eta 16s
+  step 200/391 | loss 0.0063 | acc 99.8% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0064 | acc 99.8% | 18s elapsed | eta 5s
+Ep 286 | loss 0.0070 | task 0.0070 | cons 0.0000 | train 99.8% | test 84.3% | 24s
+  step 100/391 | loss 0.0065 | acc 99.8% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0072 | acc 99.8% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0074 | acc 99.8% | 17s elapsed | eta 5s
+Ep 287 | loss 0.0076 | task 0.0076 | cons 0.0000 | train 99.8% | test 84.3% | 25s
+  step 100/391 | loss 0.0074 | acc 99.8% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0078 | acc 99.7% | 10s elapsed | eta 9s
+  step 300/391 | loss 0.0081 | acc 99.7% | 17s elapsed | eta 5s
+Ep 288 | loss 0.0084 | task 0.0084 | cons 0.0000 | train 99.7% | test 84.3% | 28s
+  step 100/391 | loss 0.0084 | acc 99.7% | 8s elapsed | eta 22s
+  step 200/391 | loss 0.0088 | acc 99.7% | 15s elapsed | eta 14s
+  step 300/391 | loss 0.0087 | acc 99.7% | 22s elapsed | eta 7s
+Ep 289 | loss 0.0088 | task 0.0088 | cons 0.0000 | train 99.7% | test 84.3% | 31s
+  step 100/391 | loss 0.0064 | acc 99.8% | 6s elapsed | eta 16s
+  step 200/391 | loss 0.0076 | acc 99.7% | 11s elapsed | eta 10s
+  step 300/391 | loss 0.0083 | acc 99.7% | 17s elapsed | eta 5s
+Ep 290 | loss 0.0078 | task 0.0078 | cons 0.0000 | train 99.7% | test 84.3% | 23s
+    K=1: 84.1%
+    K=2: 84.9%
+    K=4: 84.3%
+  step 100/391 | loss 0.0058 | acc 99.8% | 7s elapsed | eta 22s
+  step 200/391 | loss 0.0073 | acc 99.8% | 13s elapsed | eta 13s
+  step 300/391 | loss 0.0082 | acc 99.7% | 16s elapsed | eta 5s
+Ep 291 | loss 0.0076 | task 0.0076 | cons 0.0000 | train 99.7% | test 84.3% | 24s
+  step 100/391 | loss 0.0063 | acc 99.8% | 8s elapsed | eta 23s
+  step 200/391 | loss 0.0080 | acc 99.8% | 13s elapsed | eta 13s
+  step 300/391 | loss 0.0080 | acc 99.7% | 17s elapsed | eta 5s
+Ep 292 | loss 0.0079 | task 0.0079 | cons 0.0000 | train 99.7% | test 84.4% | 23s
+  step 100/391 | loss 0.0064 | acc 99.7% | 4s elapsed | eta 12s
+  step 200/391 | loss 0.0069 | acc 99.8% | 8s elapsed | eta 7s
+  step 300/391 | loss 0.0064 | acc 99.8% | 11s elapsed | eta 3s
+Ep 293 | loss 0.0069 | task 0.0069 | cons 0.0000 | train 99.8% | test 84.3% | 20s
+  step 100/391 | loss 0.0074 | acc 99.8% | 8s elapsed | eta 22s
+  step 200/391 | loss 0.0078 | acc 99.8% | 13s elapsed | eta 12s
+  step 300/391 | loss 0.0073 | acc 99.8% | 20s elapsed | eta 6s
+Ep 294 | loss 0.0078 | task 0.0078 | cons 0.0000 | train 99.7% | test 84.3% | 30s
+  step 100/391 | loss 0.0054 | acc 99.8% | 5s elapsed | eta 14s
+  step 200/391 | loss 0.0082 | acc 99.7% | 8s elapsed | eta 8s
+  step 300/391 | loss 0.0081 | acc 99.8% | 13s elapsed | eta 4s
+Ep 295 | loss 0.0079 | task 0.0079 | cons 0.0000 | train 99.8% | test 84.3% | 22s
+  step 100/391 | loss 0.0070 | acc 99.8% | 6s elapsed | eta 18s
+  step 200/391 | loss 0.0073 | acc 99.8% | 12s elapsed | eta 11s
+  step 300/391 | loss 0.0070 | acc 99.8% | 19s elapsed | eta 6s
+Ep 296 | loss 0.0079 | task 0.0079 | cons 0.0000 | train 99.7% | test 84.4% | 28s
+  step 100/391 | loss 0.0102 | acc 99.6% | 4s elapsed | eta 10s
+  step 200/391 | loss 0.0083 | acc 99.7% | 7s elapsed | eta 7s
+  step 300/391 | loss 0.0083 | acc 99.7% | 13s elapsed | eta 4s
+Ep 297 | loss 0.0085 | task 0.0085 | cons 0.0000 | train 99.7% | test 84.4% | 23s
+  step 100/391 | loss 0.0078 | acc 99.7% | 6s elapsed | eta 17s
+  step 200/391 | loss 0.0076 | acc 99.7% | 12s elapsed | eta 12s
+  step 300/391 | loss 0.0081 | acc 99.7% | 19s elapsed | eta 6s
+Ep 298 | loss 0.0082 | task 0.0082 | cons 0.0000 | train 99.7% | test 84.4% | 28s
+  step 100/391 | loss 0.0080 | acc 99.8% | 9s elapsed | eta 25s
+  step 200/391 | loss 0.0081 | acc 99.7% | 15s elapsed | eta 15s
+  step 300/391 | loss 0.0077 | acc 99.7% | 19s elapsed | eta 6s
+Ep 299 | loss 0.0079 | task 0.0079 | cons 0.0000 | train 99.7% | test 84.4% | 26s
+  step 100/391 | loss 0.0074 | acc 99.8% | 7s elapsed | eta 21s
+  step 200/391 | loss 0.0074 | acc 99.8% | 14s elapsed | eta 13s
+  step 300/391 | loss 0.0081 | acc 99.7% | 18s elapsed | eta 5s
+Ep 300 | loss 0.0076 | task 0.0076 | cons 0.0000 | train 99.8% | test 84.4% | 24s
+    K=1: 84.0%
+    K=2: 84.9%
+    K=4: 84.4%
+Saved checkpoint to models/euler_4bpu_K4_d01.pt
