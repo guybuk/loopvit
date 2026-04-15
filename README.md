@@ -37,6 +37,7 @@ All variants share the same ViT skeleton (patch embed, cls token, positional emb
 Best result: **plain+cons 2bpu** achieves 85.5% at 4 block passes with 914K params, beating the 8-layer baseline (84.1%, 3.58M params) with 4x fewer parameters and half the compute.
 
 ![Pareto curve](artifacts/pareto_cifar10_d01.png)
+*Circle size indicates parameter count.*
 
 ## Training
 
