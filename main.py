@@ -570,18 +570,23 @@ def train():
                     K_cur = random.choice(K_choices)
 
                 if cons_w_eff > 0 and args.cons_mode == "output":
-                    # Output distillation: teacher (K_max) teaches student (K_cur)
-                    h_final = model.forward_steps(h0, 0.0, 1.0, K_cur)
-                    logits = model.classify(h_final)
-                    task = F.cross_entropy(logits, labels)
-
+                    # Output distillation: run K_max steps, classify at both
+                    # K_cur (student) and K_max (teacher). Single forward pass.
+                    h_final, intermediates = model.forward_steps(
+                        h0, 0.0, 1.0, args.K, return_intermediates=True,
+                    )
+                    # Teacher: classify at K_max (stop-grad)
+                    with torch.no_grad():
+                        teacher_logits = model.classify(h_final)
+                    # Student: classify at K_cur (prefix of the same trajectory)
                     if K_cur < args.K:
-                        with torch.no_grad():
-                            h_teacher = model.forward_steps(h0, 0.0, 1.0, args.K)
-                            teacher_logits = model.classify(h_teacher)
+                        _, h_student = intermediates[K_cur]  # h after K_cur steps
+                        logits = model.classify(h_student)
                         cons = F.mse_loss(logits, teacher_logits)
                     else:
+                        logits = model.classify(h_final)
                         cons = torch.tensor(0.0, device=dev)
+                    task = F.cross_entropy(logits, labels)
 
                     loss = task + cons_w_eff * cons
                     tot_cons += cons.item()
