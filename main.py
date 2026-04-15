@@ -1,14 +1,18 @@
 """
-Phase 0: Continuous-Depth ViT with MeanFlow-style JVP consistency loss on CIFAR-10.
+LoopViT: Adaptive-depth ViT via weight-shared looping blocks.
 
-A single shared transformer block, conditioned on (t_start, t_end), is iterated
-K times over [0, 1]. The block uses dt-scaled residuals (Euler step form) so that
-B(h, t, t) = h is guaranteed architecturally. The consistency loss uses JVP with
-randomly sampled (t_s, t_e) pairs across the full depth range.
+A unit of #bpu transformer blocks is looped K times. During training, K is
+sampled uniformly from {1, ..., K_max} and an output distillation loss
+teaches low-K paths to match high-K outputs. At inference, K trades compute
+for accuracy.
 
 Usage:
-  python continuous_depth_vit.py --model continuous --K 8 --epochs 100
-  python continuous_depth_vit.py --model baseline --K 8 --epochs 100
+  # LoopViT (plain+cons, recommended)
+  python main.py --model continuous --block_type plain --blocks_per_unit 2 --K 4 \
+      --cons_w 1.0 --cons_warmup 50 --cons_mode output --dropout 0.1 --epochs 300
+
+  # Baseline (standard ViT)
+  python main.py --model baseline --block_type plain --K 8 --dropout 0.1 --epochs 300
 """
 
 import argparse
@@ -18,70 +22,9 @@ import time
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.func import jvp
 from torch.utils.data import DataLoader, Dataset
 from torchvision import datasets, transforms
 
-
-class AdaptiveViT(nn.Module):
-    """Standard ViT with N independent layers, each t-conditioned with dt scaling.
-    During training, randomly sample K layers from N and assign them
-    evenly spaced intervals over [0,1]. At inference, use all N or any K."""
-
-    def __init__(
-        self,
-        img_size=32,
-        patch_size=4,
-        in_ch=3,
-        n_cls=10,
-        dim=192,
-        n_heads=4,
-        mlp_ratio=4.0,
-        t_dim=64,
-        n_layers=8,
-    ):
-        super().__init__()
-        n_patches = (img_size // patch_size) ** 2
-        self.patch_embed = nn.Conv2d(in_ch, dim, patch_size, stride=patch_size)
-        self.cls_token = nn.Parameter(torch.randn(1, 1, dim) * 0.02)
-        self.pos_embed = nn.Parameter(torch.randn(1, n_patches + 1, dim) * 0.02)
-        self.layers = nn.ModuleList(
-            [Block(dim, n_heads, mlp_ratio, t_dim, mode="euler") for _ in range(n_layers)]
-        )
-        self.n_layers = n_layers
-        self.norm = nn.LayerNorm(dim)
-        self.head = nn.Linear(dim, n_cls)
-
-    def embed(self, x):
-        B = x.shape[0]
-        x = self.patch_embed(x).flatten(2).transpose(1, 2)
-        x = torch.cat([self.cls_token.expand(B, -1, -1), x], dim=1)
-        return x + self.pos_embed
-
-    def classify(self, h):
-        return self.head(self.norm(h[:, 0]))
-
-    def forward(self, x, K=None):
-        h = self.embed(x)
-        dev = h.device
-        if K is None:
-            K = self.n_layers
-
-        if K >= self.n_layers:
-            dt = 1.0 / self.n_layers
-            for i, layer in enumerate(self.layers):
-                ts = torch.tensor(i * dt, device=dev)
-                te = torch.tensor((i + 1) * dt, device=dev)
-                h = layer(h, ts, te)
-        else:
-            indices = sorted(random.sample(range(self.n_layers), K))
-            dt = 1.0 / K
-            for step, idx in enumerate(indices):
-                ts = torch.tensor(step * dt, device=dev)
-                te = torch.tensor((step + 1) * dt, device=dev)
-                h = self.layers[idx](h, ts, te)
-
-        return self.classify(h)
 
 
 # ---------------------------------------------------------------------------
@@ -105,9 +48,6 @@ class Attention(nn.Module):
         self.attn_drop = nn.Dropout(attn_drop)
         self.proj = nn.Linear(dim, dim, bias=proj_bias)
         self.proj_drop = nn.Dropout(proj_drop)
-        # Track whether we're inside a JVP pass (flash/efficient kernels
-        # don't support forward-mode AD, so we force the math backend).
-        self._force_math_sdpa = False
 
     def forward(self, x):
         B, N, C = x.shape
@@ -117,23 +57,10 @@ class Attention(nn.Module):
             .permute(2, 0, 3, 1, 4)
         )
         q, k, v = qkv.unbind(0)
-        if self._force_math_sdpa:
-            with torch.backends.cuda.sdp_kernel(
-                enable_flash=False, enable_mem_efficient=False, enable_math=True
-            ):
-                x = F.scaled_dot_product_attention(
-                    q,
-                    k,
-                    v,
-                    dropout_p=self.attn_drop.p if self.training else 0.0,
-                )
-        else:
-            x = F.scaled_dot_product_attention(
-                q,
-                k,
-                v,
-                dropout_p=self.attn_drop.p if self.training else 0.0,
-            )
+        x = F.scaled_dot_product_attention(
+            q, k, v,
+            dropout_p=self.attn_drop.p if self.training else 0.0,
+        )
         x = x.transpose(1, 2).reshape(B, N, C)
         x = self.proj(x)
         x = self.proj_drop(x)
@@ -377,56 +304,6 @@ def consistency_loss_two_path(model, intermediates):
     )
 
     return F.mse_loss(h_one, h_two)
-    """
-    Reuse cached intermediate states from the forward pass.
-    Pick a random grid point as t_s, sample a random t_e > t_s.
-
-      - JVP of block(h_ts, t_s, t) w.r.t. t at t = t_e gives predicted velocity
-      - Target: velocity field at t_e (stop-gradiented)
-
-    With dt-scaled residuals, target simplifies to the raw velocity output.
-    """
-    # Pick a random cached grid point
-    idx = random.randint(0, len(intermediates) - 1)
-    t_s, h_ts = intermediates[idx]
-    h_ts = h_ts.detach()
-    dev = h_ts.device
-
-    # Sample t_e somewhere ahead of t_s (but within [0, 1])
-    t_e = random.uniform(t_s + 0.05, min(t_s + 0.5, 1.0))
-
-    # ---- JVP: d/dt_e of block(h_ts, t_s, t_e) ----
-    ts_tensor = torch.tensor(t_s, device=dev)
-
-    # Force math-only SDPA backend during JVP (flash/efficient don't support fwd-mode AD)
-    for blk in model.block.blocks:
-        blk.attn._force_math_sdpa = True
-
-    def f(t_end):
-        return model.block(h_ts, ts_tensor, t_end)
-
-    primal, tangent = jvp(
-        f,
-        (torch.tensor(t_e, device=dev),),
-        (torch.tensor(1.0, device=dev),),
-    )
-
-    for blk in model.block.blocks:
-        blk.attn._force_math_sdpa = False
-    # primal  = block(h_ts, t_s, t_e)    — one-step prediction over [t_s, t_e]
-    # tangent = d/dt_e of that            — how output changes as interval extends
-
-    # ---- Target: instantaneous velocity at t_e (stop-gradiented) ----
-    with torch.no_grad():
-        h_te = primal.detach()
-        h_te_eps = model.block(
-            h_te,
-            torch.tensor(t_e, device=dev),
-            torch.tensor(t_e + eps, device=dev),
-        )
-        target_vel = (h_te_eps - h_te) / eps
-
-    return F.mse_loss(tangent, target_vel)
 
 
 # ---------------------------------------------------------------------------
@@ -515,7 +392,7 @@ def get_dataloaders(dataset_name, batch_size, num_workers=4):
 def train():
     p = argparse.ArgumentParser()
     p.add_argument(
-        "--model", choices=["continuous", "baseline", "adaptive"], default="continuous"
+        "--model", choices=["continuous", "baseline"], default="continuous"
     )
     p.add_argument(
         "--dataset", choices=["cifar10", "imagenet64"], default="cifar10",
@@ -535,15 +412,9 @@ def train():
     )
     p.add_argument(
         "--cons_mode",
-        choices=["jvp", "two_path", "output", "linear"],
+        choices=["output", "linear", "two_path"],
         default="output",
-        help="Consistency loss variant: 'jvp' or 'two_path'",
-    )
-    p.add_argument(
-        "--cons_eps",
-        type=float,
-        default=1e-2,
-        help="Epsilon for instantaneous velocity estimate (jvp only)",
+        help="Consistency loss: 'output' (logit MSE), 'linear' (logit linearity), 'two_path' (hidden state MSE)",
     )
     p.add_argument("--dim", type=int, default=192)
     p.add_argument("--dropout", type=float, default=0.0, help="Dropout rate")
@@ -631,14 +502,6 @@ def train():
             block_type=args.block_type,
             dropout=args.dropout,
         ).to(dev)
-    elif args.model == "adaptive":
-        model = AdaptiveViT(
-            img_size=img_size,
-            n_cls=n_cls,
-            dim=args.dim,
-            n_heads=4,
-            n_layers=args.K,
-        ).to(dev)
     else:
         model = StandardViT(img_size=img_size, n_cls=n_cls, dim=args.dim, n_heads=4, n_layers=args.K, block_type=args.block_type, dropout=args.dropout).to(dev)
 
@@ -664,8 +527,6 @@ def train():
                 for imgs, labels in test_dl:
                     imgs, labels = imgs.to(dev), labels.to(dev)
                     if args.model == "continuous":
-                        logits = model(imgs, K=kk)
-                    elif args.model == "adaptive":
                         logits = model(imgs, K=kk)
                     else:
                         logits = model(imgs)
@@ -761,12 +622,7 @@ def train():
                     logits = model.classify(h_final)
                     task = F.cross_entropy(logits, labels)
 
-                    if args.cons_mode == "jvp":
-                        cons = consistency_loss_jvp(
-                            model, intermediates, eps=args.cons_eps,
-                        )
-                    else:
-                        cons = consistency_loss_two_path(model, intermediates)
+                    cons = consistency_loss_two_path(model, intermediates)
                     loss = task + cons_w_eff * cons
                     tot_cons += cons.item()
                 else:
@@ -774,13 +630,6 @@ def train():
                     logits = model.classify(h_final)
                     task = F.cross_entropy(logits, labels)
                     loss = task
-            elif args.model == "adaptive":
-                K_choices = list(range(1, model.n_layers + 1))
-                K_cur = random.choice(K_choices)
-                logits = model(imgs, K=K_cur)
-                task = F.cross_entropy(logits, labels)
-                loss = task
-
             else:
                 logits = model(imgs)
                 task = F.cross_entropy(logits, labels)
@@ -815,8 +664,6 @@ def train():
                 imgs, labels = imgs.to(dev), labels.to(dev)
                 if args.model == "continuous":
                     logits = model(imgs, K=args.K)
-                elif args.model == "adaptive":
-                    logits = model(imgs, K=model.n_layers)
                 else:
                     logits = model(imgs)
                 t_correct += (logits.argmax(1) == labels).sum().item()
@@ -834,10 +681,8 @@ def train():
         print(log)
 
         # --- adaptive-step probe every 10 epochs ---
-        if args.model in ("continuous", "adaptive") and epoch % 10 == 0:
+        if args.model == "continuous" and epoch % 10 == 0:
             probe_ks = [1, 2, 4]
-            if args.model == "adaptive":
-                probe_ks = [k for k in probe_ks if k <= model.n_layers]
             for kk in probe_ks:
                 kc = 0
                 with torch.no_grad():

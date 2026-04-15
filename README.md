@@ -83,13 +83,13 @@ uv run python main.py --dataset cifar10 --model continuous --block_type plain \
 
 | Flag | Description |
 |------|-------------|
-| `--model` | `continuous` (shared/looped), `baseline` (independent layers), `adaptive` |
+| `--model` | `continuous` (shared/looped), `baseline` (independent layers) |
 | `--block_type` | `plain`, `euler`, `direct` |
 | `--blocks_per_unit` | Number of unique blocks in the shared unit |
 | `--K` | Max loop iterations during training |
 | `--cons_w` | Output distillation weight (0 = disabled) |
 | `--cons_warmup` | Linearly ramp cons_w from 0 over N epochs |
-| `--cons_mode` | `output` (logit MSE), `linear` (logit linearity), `two_path` (hidden state MSE), `jvp` |
+| `--cons_mode` | `output` (logit MSE), `linear` (logit linearity), `two_path` (hidden state MSE) |
 | `--dropout` | Dropout rate (0.1 recommended) |
 | `--ckpt_every` | Save checkpoint every N epochs |
 | `--dataset` | `cifar10` or `imagenet64` |
